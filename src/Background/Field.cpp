@@ -1,13 +1,13 @@
 #include "Field.h"
 
 Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
-    this->field.resize(height);
     for (int i = 0; i != height; i++)
     {
+        this->field.emplace_back();
         this->field.at(i).resize(width);
         for (int j = 0; j != width; j++)
         {
-            this->field.at(i).at(j) = Cell();
+            this->field.at(i).emplace_back();
         }
     }
 };
@@ -27,13 +27,13 @@ Field &Field::operator=(Field &&other) {
 }
 
 Field::Field(const Field &other) : width(other.width), height(other.height), player_position(other.player_position) {
-    field.resize(height);
     for (int i = 0; i != height; i++)
     {
-        this->field.at(i).resize(width);
+        this->field.emplace_back();
         for (int j = 0; j != width; j++)
         {
-            this->field.at(i).at(j) = other.field.at(i).at(j);
+            Cell new_cell(other.field.at(i).at(j));
+            this->field.at(i).push_back(new_cell);
         }
     }
 }
@@ -74,20 +74,24 @@ void Field::generate_field() {
 
 void Field::change_player_position(Player::Directions direction) {
     field.at(player_position.second).at(player_position.first).set_type(Cell::STANDARD);
+    std::pair<int, int> temp_pair = this->player_position;
+
     switch (direction) {
         case Player::UP:
-            player_position.second--;
+            temp_pair.second--;
             break;
         case Player::DOWN:
-            player_position.second++;
+            temp_pair.second++;
             break;
         case Player::LEFT:
-            player_position.first--;
+            temp_pair.first--;
             break;
         case Player::RIGHT:
-            player_position.first++;
+            temp_pair.first++;
             break;
     }
+
+    check_position(temp_pair);
 
     player_position.first = player_position.first % width;
     player_position.second = player_position.second % height;
@@ -96,6 +100,25 @@ void Field::change_player_position(Player::Directions direction) {
     if(player_position.second < 0) player_position.second += height;
 
     field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
+}
+
+int Field::get_height() const {
+    return this->height;
+};
+
+int Field::get_width() const {
+    return this->width;
+};
+
+std::vector<std::vector<Cell>> Field::get_field() const {
+    return this->field;
+}
+
+void Field::check_position(std::pair<int, int> pair) {
+    if(this->field.at(pair.second).at(pair.second).get_celltype() == Cell::WALL){
+        return;
+    }
+    this->player_position = pair;
 };
 
 

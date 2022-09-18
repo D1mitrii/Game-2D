@@ -16,7 +16,7 @@ public:
     Cell();
     Cell(const Cell& other);
     Cell(Cell &&other);
-    CellType get_celltype();
+    CellType get_celltype() const;
     void swap(Cell& other);
     Cell& operator=(const Cell& other);
     Cell& operator=(Cell&& other);

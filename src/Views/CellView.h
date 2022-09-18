@@ -9,12 +9,12 @@
 
 class CellView {
 private:
-    char cell_char;
+    char cell_view;
 public:
     CellView() = default;
     ~CellView() = default;
-    CellView(const Cell& cell);
-    char get_render(Cell &cell);
+    explicit CellView(const Cell& cell);
+    char get_view() const;
 };
 
 

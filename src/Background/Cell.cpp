@@ -38,7 +38,7 @@ Cell &Cell::operator=(Cell&& other){
     return  *this;
 };
 
-Cell::CellType Cell::get_celltype() {
+Cell::CellType Cell::get_celltype() const {
     return this->type;
 }
 

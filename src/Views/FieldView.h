@@ -7,14 +7,15 @@
 
 
 #include "src/Background/Field.h"
-
+#include "src/Views/CellView.h"
+#include "iostream"
 class FieldView {
 private:
-    Field field;
+    void write_horizontal_border(int width) const;
 public:
-    explicit FieldView(Field& field);
+    explicit FieldView() = default;
     ~FieldView() = default;
-    void print();
+    void write_field(const Field& field) const;
 };
 
 
