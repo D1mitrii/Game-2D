@@ -3,15 +3,24 @@
 
 
 #include "src/Events/Event.h"
+#include <algorithm>
 
 class Cell {
 public:
-    Cell();
     enum CellType{
         STANDARD,
-        WALL
+        PLAYER,
+        WALL,
+        Coin
     };
+    Cell();
+    Cell(const Cell& other);
+    Cell(Cell &&other);
     CellType GetCellType();
+    void swap(Cell& other);
+    Cell& operator=(const Cell& other);
+    Cell& operator=(Cell&& other);
+    void Set_Type(CellType type);
 private:
     CellType type;
     Event* event;
