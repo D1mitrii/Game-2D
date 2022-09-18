@@ -16,11 +16,11 @@ public:
     Cell();
     Cell(const Cell& other);
     Cell(Cell &&other);
-    CellType GetCellType();
+    CellType get_celltype();
     void swap(Cell& other);
     Cell& operator=(const Cell& other);
     Cell& operator=(Cell&& other);
-    void Set_Type(CellType type);
+    void set_type(CellType type);
 private:
     CellType type;
     Event* event;

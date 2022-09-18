@@ -50,26 +50,52 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    field.at(0).at(0).Set_Type(Cell::CellType::PLAYER);
+    field.at(0).at(0).set_type(Cell::PLAYER);
     for(int i = 0; i != this->height; i++){
         int pos = i == 0 ? 1 : 0;
         for (int j = pos; j < this->width; ++j) {
-            field.at(i).at(j).Set_Type(Cell::CellType::STANDARD);
+            field.at(i).at(j).set_type(Cell::STANDARD);
             std::random_device dev;
             std::mt19937 rng(dev());
             std::uniform_int_distribution<std::mt19937::result_type> dist(1,100);
             switch (dist(rng) % 5) {
                 case 1:
-                    field.at(i).at(j).Set_Type(Cell::CellType::WALL);
+                    field.at(i).at(j).set_type(Cell::WALL);
                     break;
                 case 2:
-                    field.at(i).at(j).Set_Type(Cell::CellType::Coin);
+                    field.at(i).at(j).set_type(Cell::Coin);
                     break;
                 default:
                     break;
             }
         }
     }
+}
+
+void Field::change_player_position(Player::Directions direction) {
+    field.at(player_position.second).at(player_position.first).set_type(Cell::STANDARD);
+    switch (direction) {
+        case Player::UP:
+            player_position.second--;
+            break;
+        case Player::DOWN:
+            player_position.second++;
+            break;
+        case Player::LEFT:
+            player_position.first--;
+            break;
+        case Player::RIGHT:
+            player_position.first++;
+            break;
+    }
+
+    player_position.first = player_position.first % width;
+    player_position.second = player_position.second % height;
+
+    if(player_position.first < 0) player_position.first += width;
+    if(player_position.second < 0) player_position.second += height;
+
+    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
 };
 
 

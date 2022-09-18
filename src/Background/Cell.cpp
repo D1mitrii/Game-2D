@@ -38,10 +38,10 @@ Cell &Cell::operator=(Cell&& other){
     return  *this;
 };
 
-Cell::CellType Cell::GetCellType() {
+Cell::CellType Cell::get_celltype() {
     return this->type;
 }
 
-void Cell::Set_Type(Cell::CellType type){
+void Cell::set_type(Cell::CellType type) {
     this->type = type;
 };

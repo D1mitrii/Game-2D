@@ -2,6 +2,7 @@
 #define OOP_FIELD_H
 
 #include <vector>
+#include "src/Entities/Player.h"
 #include "Cell.h"
 #include "utility"
 #include "random"
@@ -20,7 +21,7 @@ public:
     Field& operator=(const Field& other);
     Field& operator=(Field&& other);
     void generate_field();
-    void change_player_position()
+    void change_player_position(Player::Directions direction);
 };
 
 
