@@ -3,18 +3,18 @@
 //
 
 #include "FieldView.h"
-#include "conio.h"
 
 void FieldView::write_field(const Field& field) const {
     write_horizontal_border(field.get_width());
-    for (int i = 0; i != field.get_height() ; ++i) {
+
+    for (int i = 0; i != field.get_height(); ++i) {
         std::cout << '|';
-        for (int j = 0; j != field.get_width() ; ++j) {
-            CellView current_cell = CellView(field.get_field().at(i).at(j));
-            std::cout << current_cell.get_view() << "  ";
+        for (int j = 0; j != field.get_width(); ++j) {
+            std::cout << CellView(field.get_field().at(i).at(j)).get_view() << "  ";
         }
         std::cout << "|\n";
     }
+
     write_horizontal_border(field.get_width());
 }
 

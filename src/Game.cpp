@@ -1,8 +1,24 @@
 #include "Game.h"
 
 void Game::start() {
-    Field new_field(3,3);
-    new_field.generate_field();
-    FieldView view;
-    view.write_field(new_field);
+    view.write_field(this->field);
+    Player::Directions command;
+    while (true){
+        command = mediator.move();
+        if(command == Player::Directions::EXIT){
+            return;
+        }
+        reaction(command);
+    }
+};
+
+Game::Game() : view(FieldView()), mediator(Mediator()){
+    std::pair<int,int> field_size = mediator.field_size();
+    this->field = Field(field_size.first, field_size.second);
+    this->field.generate_field();
 }
+
+void Game::reaction(Player::Directions move) {
+    this->field.change_player_position(move);
+    this->view.write_field(field);
+};

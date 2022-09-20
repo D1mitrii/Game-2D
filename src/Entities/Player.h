@@ -17,7 +17,9 @@ public:
         UP,
         DOWN,
         LEFT,
-        RIGHT
+        RIGHT,
+        EXIT,
+        NOTHING
     };
     static Player* instance(int hearts = 3, int power = 1);
     Player(Player &other) = delete;
