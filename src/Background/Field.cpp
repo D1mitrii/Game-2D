@@ -55,9 +55,9 @@ void Field::generate_field() {
         for (int j = pos; j != this->width; j++) {
             field.at(i).at(j).set_type(Cell::STANDARD);
             std::random_device dev;
-            std::mt19937 rng(dev());
-            std::uniform_int_distribution<std::mt19937::result_type> dist(1,100);
-            switch (dist(rng) % 5) {
+            std::mt19937 random_gen(dev());
+            std::uniform_int_distribution<std::mt19937::result_type> u_i_distr(1,7);
+            switch (u_i_distr(random_gen)) {
                 case 1:
                     field.at(i).at(j).set_type(Cell::WALL);
                     break;

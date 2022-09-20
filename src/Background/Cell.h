@@ -14,13 +14,15 @@ public:
         Coin
     };
     Cell();
-    Cell(const Cell& other);
+    Cell(const Cell& other) = default;
     Cell(Cell &&other);
     CellType get_celltype() const;
     void swap(Cell& other);
     Cell& operator=(const Cell& other);
     Cell& operator=(Cell&& other);
-    void set_type(CellType type);
+    void set_type(CellType type1);
+    void set_event(Event& other);
+    void update();
 private:
     CellType type;
     Event* event;

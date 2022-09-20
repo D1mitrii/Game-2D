@@ -6,14 +6,9 @@
 #include "Cell.h"
 #include "src/Events/Event.h"
 
-Cell::Cell() {
-    this->type = CellType::STANDARD;
-    Event new_event;
-    this->event = &new_event;
+Cell::Cell() : type(CellType::STANDARD), event(nullptr) {
 };
 
-Cell::Cell(const Cell &other) : type(other.type){
-};
 
 Cell::Cell(Cell &&other) {
     this->swap(other);
@@ -42,6 +37,16 @@ Cell::CellType Cell::get_celltype() const {
     return this->type;
 }
 
-void Cell::set_type(Cell::CellType type) {
-    this->type = type;
+void Cell::set_type(Cell::CellType type1) {
+    this->type = type1;
+};
+
+void Cell::set_event(Event &other) {
+    this->event = &other;
+};
+
+void Cell::update() {
+    if(event != nullptr){
+        event->Execute();
+    }
 };
