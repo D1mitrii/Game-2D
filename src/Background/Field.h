@@ -9,8 +9,8 @@
 
 class Field {
 private:
-    int height{};
-    int width{};
+    int height;
+    int width;
     std::pair<int, int> player_position;
     std::vector<std::vector<Cell>> field;
     void check_position(std::pair<int, int> pair);

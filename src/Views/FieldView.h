@@ -9,6 +9,7 @@
 #include "src/Background/Field.h"
 #include "src/Views/CellView.h"
 #include "iostream"
+
 class FieldView {
 private:
     void write_horizontal_border(int width) const;

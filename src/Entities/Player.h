@@ -8,10 +8,6 @@ private:
     int coins;
     int power;
 
-protected:
-    static Player* player;
-    explicit Player(int hearts = 3, int power = 1);
-
 public:
     enum Directions{
         UP,
@@ -21,11 +17,16 @@ public:
         EXIT,
         NOTHING
     };
-    static Player* instance(int hearts = 3, int power = 1);
+    explicit Player(int hearts = 3, int power = 1);
     Player(Player &other) = delete;
     void operator=(const Player &) = delete;
     ~Player() = default;
     int get_hearts() const;
+    int get_coins() const;
+    int get_power() const;
+    void set_hearts(int heart);
+    void set_power(int dmg);
+    void set_coins(int coin);
 };
 
 

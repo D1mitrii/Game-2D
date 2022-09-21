@@ -11,9 +11,8 @@ class CellView {
 private:
     char cell_view;
 public:
-    CellView() = default;
-    ~CellView() = default;
     explicit CellView(const Cell& cell);
+    ~CellView() = default;
     char get_view() const;
 };
 

@@ -3,6 +3,7 @@
 
 
 #include "src/Events/Event.h"
+#include "src/Entities/Player.h"
 #include <algorithm>
 
 class Cell {
@@ -14,15 +15,10 @@ public:
         Coin
     };
     Cell();
-    Cell(const Cell& other) = default;
-    Cell(Cell &&other);
     CellType get_celltype() const;
-    void swap(Cell& other);
-    Cell& operator=(const Cell& other);
-    Cell& operator=(Cell&& other);
     void set_type(CellType type1);
-    void set_event(Event& other);
-    void update();
+    void set_event(Event* other);
+    void update(Player& player);
 private:
     CellType type;
     Event* event;
