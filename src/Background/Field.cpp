@@ -42,9 +42,17 @@ Field::Field(Field &&other) {
 }
 
 Field &Field::operator=(const Field &other) {
-    if (this != &other)
-        Field(other).swap(*this);
-
+    if (this != &other){
+        this->height = other.height;
+        this->width = other.width;
+        this->player_position = other.player_position;
+        for(int i = 0; i != height; i++){
+            this->field.emplace_back();
+            for(int j = 0; j != width; j++){
+                this->field.at(i).push_back(other.field.at(i).at(j));
+            }
+        }
+    }
     return *this;
 }
 

@@ -13,6 +13,8 @@ void Cell::set_type(Cell::CellType type1) {
 };
 
 void Cell::set_event(Event* other) {
+    if(this->event == nullptr || this->event == other)
+        return;
     this->event = other;
 };
 
