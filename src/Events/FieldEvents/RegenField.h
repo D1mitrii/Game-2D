@@ -10,6 +10,7 @@
 class RegenField : public FieldEvents{
 public:
     void execute(Field& field) final;
+    ~RegenField() = default;
 };
 
 

@@ -11,6 +11,7 @@
 class PoisonTrap : public PlayerEvents {
 public:
     void execute(Player& player) final;
+    ~PoisonTrap() override = default;
 };
 
 #endif //OOP_POISONTRAP_H

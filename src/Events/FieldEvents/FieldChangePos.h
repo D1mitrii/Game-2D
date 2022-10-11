@@ -6,12 +6,12 @@
 #define OOP_FIELDCHANGEPOS_H
 
 #include "src/Background/Field.h"
-
 #include "src/Events/FieldEvents/FieldEvents.h"
 
 class FieldChangePos : public FieldEvents{
 public:
     void execute(Field& field) final;
+    ~FieldChangePos() override = default;
 };
 
 

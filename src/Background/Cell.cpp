@@ -25,3 +25,7 @@ void Cell::update(Player& player, Field& field) {
     }
 }
 
+Event *Cell::get_event() {
+    return event;
+}
+

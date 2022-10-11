@@ -23,6 +23,7 @@ public:
     CellType get_celltype() const;
     void set_type(CellType type1);
     void set_event(Event* other);
+    Event* get_event();
     void update(Player& player, Field& field);
 private:
     CellType type;

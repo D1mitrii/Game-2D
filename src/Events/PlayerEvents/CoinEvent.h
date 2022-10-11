@@ -11,6 +11,7 @@
 class CoinEvent : public PlayerEvents {
 public:
     void execute(Player& player) final;
+    ~CoinEvent() override = default;
 };
 
 

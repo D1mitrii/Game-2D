@@ -11,6 +11,7 @@
 class FrozenTrap : public PlayerEvents {
 public:
     void execute(Player& player) final;
+    ~FrozenTrap() override = default;
 };
 
 

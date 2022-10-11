@@ -59,11 +59,10 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
+    deconstruct();
     RNGenerator generator;
     for(int i = 0; i != this->height; i++){
-        int pos = i == 0 ? 1 : 0;
-        for (int j = pos; j != this->width; j++) {
+        for (int j = 0; j != this->width; j++) {
             field.at(i).at(j).set_type(Cell::STANDARD);
             std::uniform_int_distribution<int> distr{1, 7};
             switch (generator.get_random_value<int>(distr)) {
@@ -81,6 +80,7 @@ void Field::generate_field() {
             }
         }
     }
+    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
     notify();
 }
 
@@ -135,6 +135,22 @@ void Field::check_position(std::pair<int, int> pair) {
         return;
     }
     this->player_position = pair;
+}
+
+void Field::deconstruct() {
+    for(int i = 0; i != height; i++){
+        for (int j = 0; j != width; ++j) {
+            delete field.at(i).at(j).get_event();
+        }
+    }
+}
+
+Field::~Field() {
+    for(int i = 0; i != height; i++){
+        for (int j = 0; j != width; ++j) {
+            delete field.at(i).at(j).get_event();
+        }
+    }
 }
 
 

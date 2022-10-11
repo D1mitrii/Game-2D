@@ -14,6 +14,7 @@ class FieldEvents : public Event{
 public:
     void execute() override {};
     virtual void execute(Field& field) = 0;
+    virtual ~FieldEvents() = default;
 };
 
 

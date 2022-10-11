@@ -11,6 +11,7 @@ class PlayerEvents : public Event {
 public:
     void execute() override {};
     virtual void execute(Player& player) = 0;
+    virtual ~PlayerEvents() = default;
 };
 
 
