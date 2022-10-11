@@ -4,10 +4,10 @@
 class Cell;
 
 #include <vector>
-#include "/Cell/CellBase.h"
-#include "/Cell/CellCoin.h"
-#include "/Cell/CellTrap.h"
-#include "/Cell/CellWall.h"
+#include "src/Background/Cell/CellBase.h"
+#include "src/Background/Cell/CellWall.h"
+#include "src/Background/Cell/CellCoin.h"
+#include "src/Background/Cell/CellTrap.h"
 #include "utility"
 #include "src/Utils/RNG/RNGenerator.h"
 #include "src/Entities/Player.h"
@@ -18,7 +18,7 @@ private:
     int height;
     int width;
     std::pair<int, int> player_position;
-    std::vector<std::vector<Cell>> field;
+    std::vector<std::vector<ICell*>> field;
     void check_position(std::pair<int, int> pair);
     std::vector<IObserver*> observers;
 public:
@@ -29,11 +29,13 @@ public:
     Field& operator=(const Field& other);
     Field& operator=(Field&& other);
     void generate_field();
-    void deconstruct();
-    void change_player_position(Player& player, Player::Directions direction);
+    //void deconstruct();
+    Event* change_player_position(Player::Directions direction);
     int get_height() const;
     int get_width() const;
-    std::vector<std::vector<Cell>> get_field() const;
+    std::vector<std::vector<ICell*>> get_field() const;
+    std::pair<int, int> get_position() const;
+    void set_base_cell();
     ~Field();
 };
 

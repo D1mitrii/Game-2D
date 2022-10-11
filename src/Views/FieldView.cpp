@@ -10,11 +10,16 @@ void FieldView::write_field() const {
     for (int i = 0; i != field->get_height(); ++i) {
         std::cout << '|';
         for (int j = 0; j != field->get_width(); ++j) {
-            std::cout << CellView(field->get_field().at(i).at(j)).get_view() << "  ";
+            if(i == field->get_position().second && j == field->get_position().first){
+                std::cout << "P";
+            }
+            else{
+                std::cout << CellView(field->get_field().at(i).at(j)).get_view();
+            }
+            std::cout << "  ";
         }
         std::cout << "|\n";
     }
-
     write_horizontal_border();
 }
 

@@ -5,13 +5,16 @@
 #ifndef OOP_CELLVIEW_H
 #define OOP_CELLVIEW_H
 
-#include "src/Background/Cell.h"
+#include "src/Background/Cell/CellBase.h"
+#include "src/Background/Cell/CellCoin.h"
+#include "src/Background/Cell/CellTrap.h"
+#include "src/Background/Cell/CellWall.h"
 
 class CellView {
 private:
     char cell_view;
 public:
-    explicit CellView(const Cell& cell);
+    explicit CellView(ICell* cell);
     ~CellView() = default;
     char get_view() const;
 };

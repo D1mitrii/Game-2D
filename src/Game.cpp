@@ -22,11 +22,16 @@ Game::Game() : mediator(){
 }
 
 void Game::reaction(Player::Directions move) {
-    this->field.change_player_position(player, move);
+    event_handler(this->field.change_player_position(move));
 }
 
-void Game::event_handler() {
-
+void Game::event_handler(Event* ptr_event) {
+    if(ptr_event != nullptr){
+        if(auto temp = dynamic_cast<PlayerEvents*>(ptr_event)){
+            temp->execute(player);
+        }
+        field.set_base_cell();
+    }
 }
 
 void Game::end() {

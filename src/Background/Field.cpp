@@ -1,14 +1,7 @@
 #include "Field.h"
 
 Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
-    for (int i = 0; i != height; i++)
-    {
-        this->field.emplace_back();
-        for (int j = 0; j != width; j++)
-        {
-            this->field.at(i).emplace_back();
-        }
-    }
+    generate_field();
 };
 
 void Field::swap(Field &other) {
@@ -32,8 +25,7 @@ Field::Field(const Field &other) : width(other.width), height(other.height), pla
         this->field.emplace_back();
         for (int j = 0; j != width; j++)
         {
-            Cell new_cell(other.field.at(i).at(j));
-            this->field.at(i).push_back(new_cell);
+            this->field.at(i).push_back(other.field.at(i).at(j));
         }
     }
 }
@@ -59,20 +51,27 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    deconstruct();
+    //deconstruct();
     RNGenerator generator;
     for(int i = 0; i != this->height; i++){
+        field.emplace_back();
         for (int j = 0; j != this->width; j++) {
-            field.at(i).at(j).set_type(Cell::STANDARD);
+            field.at(i).push_back(new CellBase);
             std::uniform_int_distribution<int> distr{1, 7};
             switch (generator.get_random_value<int>(distr)) {
-                case 1:
-                    field.at(i).at(j).set_type(Cell::WALL);
+                case 1:{
+                    field.at(i).erase(field.at(i).begin() + j);
+                    field.at(i).push_back(new CellWall);
                     break;
+                }
                 case 2: {
-                    field.at(i).at(j).set_type(Cell::Coin);
-                    Event *event_new = new RegenField;
-                    field.at(i).at(j).set_event(event_new);
+                    field.at(i).erase(field.at(i).begin() + j);
+                    field.at(i).push_back(new CellCoin);
+                    break;
+                }
+                case 3: {
+                    field.at(i).erase(field.at(i).begin() + j);
+                    field.at(i).push_back(new CellTrap);
                     break;
                 }
                 default:
@@ -80,12 +79,10 @@ void Field::generate_field() {
             }
         }
     }
-    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
     notify();
 }
 
-void Field::change_player_position(Player& player, Player::Directions direction) {
-    field.at(player_position.second).at(player_position.first).set_type(Cell::STANDARD);
+Event* Field::change_player_position(Player::Directions direction) {
     std::pair<int, int> temp = player_position;
 
     switch (direction) {
@@ -113,9 +110,8 @@ void Field::change_player_position(Player& player, Player::Directions direction)
 
     check_position(temp);
 
-    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
     notify();
-    field.at(player_position.second).at(player_position.first).update(player, *this);
+    return field.at(player_position.second).at(player_position.first)->get_event();
 }
 
 int Field::get_height() const {
@@ -126,31 +122,29 @@ int Field::get_width() const {
     return this->width;
 };
 
-std::vector<std::vector<Cell>> Field::get_field() const {
+std::vector<std::vector<ICell*>> Field::get_field() const {
     return this->field;
 }
 
 void Field::check_position(std::pair<int, int> pair) {
-    if(this->field.at(pair.second).at(pair.first).get_celltype() == Cell::WALL){
+    if(dynamic_cast<CellWall*>(field.at(pair.second).at(pair.first)) != nullptr){
         return;
     }
     this->player_position = pair;
 }
 
-void Field::deconstruct() {
-    for(int i = 0; i != height; i++){
-        for (int j = 0; j != width; ++j) {
-            delete field.at(i).at(j).get_event();
-        }
-    }
-}
 
 Field::~Field() {
-    for(int i = 0; i != height; i++){
-        for (int j = 0; j != width; ++j) {
-            delete field.at(i).at(j).get_event();
-        }
-    }
+    //deconstruct();
+}
+
+std::pair<int, int> Field::get_position() const {
+    return player_position;
+}
+
+void Field::set_base_cell() {
+    delete field.at(player_position.second).at(player_position.first);
+    field.at(player_position.second).at(player_position.first) = new CellBase;
 }
 
 

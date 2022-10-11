@@ -15,7 +15,7 @@ private:
     FieldView field_view;
     PlayerView player_view;
     void reaction(Player::Directions move);
-    void event_handler();
+    void event_handler(Event* ptr_event);
     void end();
 public:
     Game();
