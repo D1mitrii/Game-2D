@@ -8,15 +8,19 @@
 
 #include "src/Background/Field.h"
 #include "src/Views/CellView.h"
-#include "iostream"
+#include "src/Utils/Obs/IObserver.h"
+#include <iostream>
 
-class FieldView {
+class FieldView : public IObserver{
 private:
-    void write_horizontal_border(int width) const;
+    void write_horizontal_border() const;
+    void write_field() const;
+    Field* field;
 public:
-    explicit FieldView() = default;
+    FieldView() = default;
+    FieldView(Field* map);
     ~FieldView() = default;
-    void write_field(const Field& field) const;
+    void update() override;
 };
 
 

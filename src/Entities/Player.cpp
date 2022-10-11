@@ -15,14 +15,26 @@ int Player::get_power() const {
     return this->power;
 }
 
+int Player::get_max_stat() const {
+    return this->max_stat;
+}
+
 void Player::set_hearts(int heart) {
     this->hearts = heart;
+    notify();
 }
 
 void Player::set_power(int dmg) {
     this->power = dmg;
+    notify();
 }
 
 void Player::set_coins(int coin) {
     this->coins = coin;
+    notify();
+}
+
+void Player::set_max_stat(int max) {
+    this->coins = max;
+    notify();
 }

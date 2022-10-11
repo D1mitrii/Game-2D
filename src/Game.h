@@ -4,13 +4,19 @@
 #include "src/Entities/Player.h"
 #include "src/Views/FieldView.h"
 #include "src/Utils/Mediator.h"
+#include "src/Entities/Player.h"
+#include "src/Views/PlayerView.h"
 
 class Game {
 private:
     Field field;
-    FieldView view;
     Mediator mediator;
+    Player player;
+    FieldView field_view;
+    PlayerView player_view;
     void reaction(Player::Directions move);
+    void event_handler();
+    void end();
 public:
     Game();
     void start();

@@ -16,6 +16,7 @@ void Field::swap(Field &other) {
     std::swap(width, other.width);
     std::swap(field, other.field);
     std::swap(player_position, other.player_position);
+    std::swap(observers, other.observers);
 }
 
 Field &Field::operator=(Field &&other) {
@@ -46,6 +47,7 @@ Field &Field::operator=(const Field &other) {
         this->height = other.height;
         this->width = other.width;
         this->player_position = other.player_position;
+        this->observers = other.observers;
         for(int i = 0; i != height; i++){
             this->field.emplace_back();
             for(int j = 0; j != width; j++){
@@ -57,29 +59,32 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    field.at(0).at(0).set_type(Cell::PLAYER);
+    field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
+    RNGenerator generator;
     for(int i = 0; i != this->height; i++){
         int pos = i == 0 ? 1 : 0;
         for (int j = pos; j != this->width; j++) {
             field.at(i).at(j).set_type(Cell::STANDARD);
-            std::random_device dev;
-            std::mt19937 random_gen(dev());
-            std::uniform_int_distribution<std::mt19937::result_type> u_i_distr(1,7);
-            switch (u_i_distr(random_gen)) {
+            std::uniform_int_distribution<int> distr{1, 7};
+            switch (generator.get_random_value<int>(distr)) {
                 case 1:
                     field.at(i).at(j).set_type(Cell::WALL);
                     break;
-                case 2:
+                case 2: {
                     field.at(i).at(j).set_type(Cell::Coin);
+                    Event *event_new = new RegenField;
+                    field.at(i).at(j).set_event(event_new);
                     break;
+                }
                 default:
                     break;
             }
         }
     }
+    notify();
 }
 
-void Field::change_player_position(Player::Directions direction) {
+void Field::change_player_position(Player& player, Player::Directions direction) {
     field.at(player_position.second).at(player_position.first).set_type(Cell::STANDARD);
     std::pair<int, int> temp = player_position;
 
@@ -109,6 +114,8 @@ void Field::change_player_position(Player::Directions direction) {
     check_position(temp);
 
     field.at(player_position.second).at(player_position.first).set_type(Cell::PLAYER);
+    notify();
+    field.at(player_position.second).at(player_position.first).update(player, *this);
 }
 
 int Field::get_height() const {
@@ -128,7 +135,8 @@ void Field::check_position(std::pair<int, int> pair) {
         return;
     }
     this->player_position = pair;
-};
+}
+
 
 
 
