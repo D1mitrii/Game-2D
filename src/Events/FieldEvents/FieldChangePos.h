@@ -5,11 +5,13 @@
 #ifndef OOP_FIELDCHANGEPOS_H
 #define OOP_FIELDCHANGEPOS_H
 
+#include "FieldEvents.h"
+#include "src/Entities/Player.h"
 #include "src/Background/Field.h"
-#include "src/Events/FieldEvents/FieldEvents.h"
 
 class FieldChangePos : public FieldEvents{
 public:
+    FieldChangePos() = default;
     void execute(Field& field) final;
     ~FieldChangePos() override = default;
 };

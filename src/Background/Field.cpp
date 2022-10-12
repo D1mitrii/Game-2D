@@ -1,6 +1,14 @@
 #include "Field.h"
 
 Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
+    for (int i = 0; i != height; i++)
+    {
+        this->field.emplace_back();
+        for (int j = 0; j != width; j++)
+        {
+            this->field.at(i).push_back(new CellBase);
+        }
+    }
     generate_field();
 };
 
@@ -51,35 +59,35 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    //deconstruct();
-    RNGenerator generator;
+    deconstruct();
     for(int i = 0; i != this->height; i++){
         field.emplace_back();
         for (int j = 0; j != this->width; j++) {
-            field.at(i).push_back(new CellBase);
-            std::uniform_int_distribution<int> distr{1, 7};
-            switch (generator.get_random_value<int>(distr)) {
-                case 1:{
-                    field.at(i).erase(field.at(i).begin() + j);
-                    field.at(i).push_back(new CellWall);
-                    break;
-                }
-                case 2: {
-                    field.at(i).erase(field.at(i).begin() + j);
-                    field.at(i).push_back(new CellCoin);
-                    break;
-                }
-                case 3: {
-                    field.at(i).erase(field.at(i).begin() + j);
-                    field.at(i).push_back(new CellTrap);
-                    break;
-                }
-                default:
-                    break;
+                field.at(i).push_back(generate_cell());
             }
         }
-    }
+    delete field.at(player_position.second).at(player_position.first);
+    field.at(player_position.second).at(player_position.first) = new CellBase;
     notify();
+}
+
+ICell* Field::generate_cell(){
+    RNGenerator generator;
+    std::uniform_int_distribution<int> distr{1, 13};
+    switch (generator.get_random_value<int>(distr)) {
+        case 1:
+            return new CellWall;
+        case 2:
+            return new CellCoin;
+        case 3:
+            return new CellTrap;
+        case 4:
+            return new CellMove;
+        case 5:
+            return new CellBuff;
+        default:
+            return new CellBase;
+    }
 }
 
 Event* Field::change_player_position(Player::Directions direction) {
@@ -122,8 +130,8 @@ int Field::get_width() const {
     return this->width;
 };
 
-std::vector<std::vector<ICell*>> Field::get_field() const {
-    return this->field;
+ICell* Field::get_cell(int x, int y) const {
+    return this->field.at(y).at(x);
 }
 
 void Field::check_position(std::pair<int, int> pair) {
@@ -135,7 +143,7 @@ void Field::check_position(std::pair<int, int> pair) {
 
 
 Field::~Field() {
-    //deconstruct();
+    deconstruct();
 }
 
 std::pair<int, int> Field::get_position() const {
@@ -147,6 +155,14 @@ void Field::set_base_cell() {
     field.at(player_position.second).at(player_position.first) = new CellBase;
 }
 
+void Field::deconstruct() {
+    for(int i = 0; i != height; i++){
+        for (int j = 0; j != width; ++j) {
+            delete field.at(i).at(j);
+        }
+    }
+    field.clear();
+}
 
 
 

@@ -22,7 +22,7 @@ public:
         EXIT = 5,
         NOTHING = 6
     };
-    explicit Player(int hearts = 3, int power = 1);
+    explicit Player(int hearts = 3, int power = 3);
     ~Player() = default;
     int get_hearts() const;
     int get_coins() const;

@@ -5,10 +5,10 @@
 #ifndef OOP_FIELDEVENTS_H
 #define OOP_FIELDEVENTS_H
 
+class Field;
 
-#include "src/Background/Field.h"
 #include "src/Utils/RNG/RNGenerator.h"
-
+#include "src/Events/Event.h"
 
 class FieldEvents : public Event{
 public:

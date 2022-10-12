@@ -1,7 +1,3 @@
-//
-// Created by Dmitriy on 10/10/2022.
-//
-
 #ifndef OOP_COINEVENT_H
 #define OOP_COINEVENT_H
 
@@ -10,6 +6,7 @@
 
 class CoinEvent : public PlayerEvents {
 public:
+    CoinEvent() = default;
     void execute(Player& player) final;
     ~CoinEvent() override = default;
 };

@@ -1,6 +1,7 @@
 #include "Player.h"
 
 Player::Player(int hearts, int power) : hearts(hearts), power(power), coins(0){
+    max_stat = std::max<int>(hearts, power);
 }
 
 int Player::get_hearts() const {
@@ -35,6 +36,6 @@ void Player::set_coins(int coin) {
 }
 
 void Player::set_max_stat(int max) {
-    this->coins = max;
+    this->max_stat = max;
     notify();
 }

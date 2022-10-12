@@ -8,6 +8,14 @@
 #include "src/Views/PlayerView.h"
 
 class Game {
+public:
+    enum STATUS{
+        START,
+        INPROGRESS,
+        END
+    };
+    Game();
+    void start();
 private:
     Field field;
     Mediator mediator;
@@ -16,10 +24,8 @@ private:
     PlayerView player_view;
     void reaction(Player::Directions move);
     void event_handler(Event* ptr_event);
-    void end();
-public:
-    Game();
-    void start();
+    void is_end();
+    STATUS status;
 };
 
 

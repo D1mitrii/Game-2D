@@ -7,16 +7,20 @@
 void FieldChangePos::execute(Field &field) {
     RNGenerator generator;
     std::uniform_int_distribution<int> distr {1, 4};
+    Player::Directions dir;
     switch (generator.get_random_value<int>(distr)) {
         case 1:
+            dir = Player::UP;
             break;
         case 2:
+            dir = Player::RIGHT;
             break;
         case 3:
+            dir = Player::LEFT;
             break;
         case 4:
-            break;
-        default:
+            dir = Player::DOWN;
             break;
     }
+    field.change_player_position(dir);
 }

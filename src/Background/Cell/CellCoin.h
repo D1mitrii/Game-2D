@@ -1,7 +1,3 @@
-//
-// Created by Dmitriy on 10/11/2022.
-//
-
 #ifndef OOP_CELLCOIN_H
 #define OOP_CELLCOIN_H
 

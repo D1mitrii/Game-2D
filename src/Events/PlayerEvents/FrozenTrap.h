@@ -1,7 +1,3 @@
-//
-// Created by Dmitriy on 10/2/2022.
-//
-
 #include "PlayerEvents.h"
 
 #ifndef OOP_FROZENTRAP_H

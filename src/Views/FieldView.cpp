@@ -14,7 +14,7 @@ void FieldView::write_field() const {
                 std::cout << "P";
             }
             else{
-                std::cout << CellView(field->get_field().at(i).at(j)).get_view();
+                std::cout << CellView(field->get_cell(j, i)).get_view();
             }
             std::cout << "  ";
         }
