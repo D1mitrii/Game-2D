@@ -23,7 +23,6 @@ private:
     void check_position(std::pair<int, int> pair);
     std::vector<IObserver*> observers;
     ICell* generate_cell();
-    void deconstruct();
 public:
     explicit Field(int a = 10, int b = 10);
     Field(const Field& other);
@@ -32,6 +31,7 @@ public:
     Field& operator=(const Field& other);
     Field& operator=(Field&& other);
     void generate_field();
+    void deconstruct();
     Event* change_player_position(Player::Directions direction);
     int get_height() const;
     int get_width() const;

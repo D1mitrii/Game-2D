@@ -5,5 +5,6 @@
 #include "FieldRegen.h"
 
 void FieldRegen::execute(Field &field) {
+    field.deconstruct();
     field.generate_field();
 }

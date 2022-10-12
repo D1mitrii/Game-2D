@@ -1,14 +1,7 @@
 #include "Field.h"
 
 Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
-    for (int i = 0; i != height; i++)
-    {
-        this->field.emplace_back();
-        for (int j = 0; j != width; j++)
-        {
-            this->field.at(i).push_back(new CellBase);
-        }
-    }
+    generate_field();
 }
 
 void Field::swap(Field &other) {
@@ -49,10 +42,9 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::generate_field() {
-    deconstruct();
-    for(int i = 0; i != this->height; i++){
+    for(int i = 0; i != height; i++){
         field.emplace_back();
-        for (int j = 0; j != this->width; j++) {
+        for (int j = 0; j != width; j++) {
                 field.at(i).push_back(generate_cell());
         }
     }
@@ -142,10 +134,11 @@ void Field::set_base_cell() {
 }
 
 void Field::deconstruct() {
-    for(int i = 0; i != height; i++){
-        for (int j = 0; j != width; ++j) {
+    if(field.empty())
+        return;
+    for (int i = 0; i != height; ++i) {
+        for (int j = 0; j != width; ++j)
             delete field.at(i).at(j);
-        }
     }
     field.clear();
 }

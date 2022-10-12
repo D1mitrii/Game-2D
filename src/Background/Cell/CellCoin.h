@@ -6,8 +6,6 @@
 #include "ICell.h"
 
 class CellCoin : public ICell {
-private:
-    Event* event;
 public:
     CellCoin();
     Event* get_event() override;

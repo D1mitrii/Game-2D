@@ -11,8 +11,6 @@
 #include "src/Utils/RNG/RNGenerator.h"
 
 class CellMove : public ICell {
-private:
-    Event* event;
 public:
     CellMove();
     Event* get_event() override;

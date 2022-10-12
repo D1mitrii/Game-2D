@@ -12,8 +12,6 @@
 #include "src/Utils/RNG/RNGenerator.h"
 
 class CellBuff : public ICell {
-private:
-    Event* event;
 public:
     CellBuff();
     Event * get_event() override;

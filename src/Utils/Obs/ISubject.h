@@ -16,6 +16,7 @@ public:
     void attach(IObserver *observer);
     void detach(IObserver *observer);
     void notify();
+    ~ISubject() = default;
 };
 
 

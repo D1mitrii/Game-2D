@@ -13,6 +13,10 @@ Game::Game(){
 }
 
 void Game::reaction() {
+    if(cur_step == Player::EXIT){
+        status = END;
+        return;
+    }
     event_handler(this->field->change_player_position(cur_step));
 }
 
@@ -59,7 +63,6 @@ void Game::initialize_field() {
 void Game::initialize_field(std::pair<int, int> size) {
     this->field = new Field(size.first, size.second);
     field_view = new FieldView(field);
-    std::printf("!%p!", &this->field_view);
 }
 
 void Game::set_step(Player::Directions cur) {
@@ -75,8 +78,8 @@ void Game::loop() {
 }
 
 Game::~Game() {
-    delete player;
-    delete field;
     delete field_view;
     delete player_view;
+    delete player;
+    delete field;
 }

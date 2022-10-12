@@ -65,11 +65,10 @@ std::pair<int, int> IOCommander::read_size() {
     int height;
     std::cout << "The size of the map must be in range from 5 to 15" << '\n';
     std::cout << "If you enter an incorrect output, the values set to 10" << '\n';
-    std::cout << "Enter a size for the map." << '\n' << "Width: ";
+    std::cout << "Enter a size for the map." << '\n' << "Width:";
     width = read_number();
-    std::cout << '\n' << "Height: ";
+    std::cout << "Height:";
     height = read_number();
-    std::cout << '\n';
     return std::pair<int, int>{width, height};
 }
 
