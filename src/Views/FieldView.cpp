@@ -5,6 +5,7 @@
 #include "FieldView.h"
 
 void FieldView::write_field() const {
+    std::cout << std::string(50, '\n');
     write_horizontal_border();
 
     for (int i = 0; i != field->get_height(); ++i) {
@@ -31,6 +32,7 @@ void FieldView::write_horizontal_border() const {
 }
 
 FieldView::FieldView(Field *map) : field(map) {
+    printf("FieldView:%p|%p", this, map);
     field->attach(this);
 }
 

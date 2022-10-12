@@ -1,8 +1,9 @@
 #include "src/Game.h"
-
+#include "src/Utils/IOCommander.h"
+#include "src/Utils/Med/Mediator.h"
 int main(){
-
-    system("chcp 65001");
     Game game;
+    IOCommander commander;
+    Mediator mediator(&game, &commander);
     game.start();
 }

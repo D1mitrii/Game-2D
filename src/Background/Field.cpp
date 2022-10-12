@@ -9,8 +9,7 @@ Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
             this->field.at(i).push_back(new CellBase);
         }
     }
-    generate_field();
-};
+}
 
 void Field::swap(Field &other) {
     std::swap(height, other.height);
@@ -43,18 +42,9 @@ Field::Field(Field &&other) {
 }
 
 Field &Field::operator=(const Field &other) {
-    if (this != &other){
-        this->height = other.height;
-        this->width = other.width;
-        this->player_position = other.player_position;
-        this->observers = other.observers;
-        for(int i = 0; i != height; i++){
-            this->field.emplace_back();
-            for(int j = 0; j != width; j++){
-                this->field.at(i).push_back(other.field.at(i).at(j));
-            }
-        }
-    }
+    if (this != &other)
+        Field(other).swap(*this);
+
     return *this;
 }
 
@@ -64,8 +54,8 @@ void Field::generate_field() {
         field.emplace_back();
         for (int j = 0; j != this->width; j++) {
                 field.at(i).push_back(generate_cell());
-            }
         }
+    }
     delete field.at(player_position.second).at(player_position.first);
     field.at(player_position.second).at(player_position.first) = new CellBase;
     notify();
@@ -91,6 +81,7 @@ ICell* Field::generate_cell(){
 }
 
 Event* Field::change_player_position(Player::Directions direction) {
+
     std::pair<int, int> temp = player_position;
 
     switch (direction) {
@@ -107,12 +98,8 @@ Event* Field::change_player_position(Player::Directions direction) {
             temp.first++;
             break;
     }
-    
-
-
     temp.first = temp.first % width;
     temp.second = temp.second % height;
-
     if(temp.first < 0) temp.first += width;
     if(temp.second < 0) temp.second += height;
 
@@ -140,7 +127,6 @@ void Field::check_position(std::pair<int, int> pair) {
     }
     this->player_position = pair;
 }
-
 
 Field::~Field() {
     deconstruct();
