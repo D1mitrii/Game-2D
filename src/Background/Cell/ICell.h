@@ -9,6 +9,8 @@
 #include "src/Events/Event.h"
 
 class ICell {
+protected:
+    Event* event;
 public:
     ICell() = default;
     virtual Event* get_event() = 0;

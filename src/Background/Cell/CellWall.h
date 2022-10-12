@@ -10,9 +10,11 @@
 
 class CellWall : public ICell{
 public:
-    CellWall() = default;
+    CellWall() {
+        event = nullptr;
+    }
     Event* get_event() override {
-        return nullptr;
+        return event;
     }
     ~CellWall() override = default;
 };

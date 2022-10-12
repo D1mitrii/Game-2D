@@ -10,9 +10,9 @@
 
 class CellBase : public ICell{
 public:
-    CellBase() = default;
+    CellBase() {event = nullptr;}
     Event* get_event() override {
-        return nullptr;
+        return event;
     }
     ~CellBase() override = default;
 };

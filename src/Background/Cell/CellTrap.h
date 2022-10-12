@@ -12,8 +12,6 @@
 #include "src/Events/PlayerEvents/FrozenTrap.h"
 
 class CellTrap : public ICell{
-private:
-    Event* event;
 public:
     CellTrap();
     Event* get_event() override;

@@ -45,7 +45,6 @@ void Mediator::commander_handler(IMediator::MEVENTS cmd) {
     switch (cmd) {
         case IMediator::CONFIRM:{
             game->initialize_field(commander->read_size());
-            game->initialize_field();
             break;
         }
         case IMediator::CANCEL:{
