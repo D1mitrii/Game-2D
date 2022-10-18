@@ -35,7 +35,6 @@ private:
     Player::Directions cur_step;
     void loop();
     void reaction();
-    void event_handler(Event* ptr_event);
     void is_end();
     STATUS status;
 };

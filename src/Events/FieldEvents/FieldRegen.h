@@ -10,8 +10,8 @@
 
 class FieldRegen : public FieldEvents {
 public:
-    FieldRegen() = default;
-    void execute(Field& field) final;
+    FieldRegen(Field* fl);
+    void execute() final;
     ~FieldRegen() override = default;
 };
 

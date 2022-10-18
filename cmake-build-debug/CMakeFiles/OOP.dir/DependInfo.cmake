@@ -9,12 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Programming/REPO/OOP/main.cpp" "CMakeFiles/OOP.dir/main.cpp.obj" "gcc" "CMakeFiles/OOP.dir/main.cpp.obj.d"
-  "D:/Programming/REPO/OOP/src/Background/Cell/CellBuff.cpp" "CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj.d"
-  "D:/Programming/REPO/OOP/src/Background/Cell/CellCoin.cpp" "CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj.d"
-  "D:/Programming/REPO/OOP/src/Background/Cell/CellMove.cpp" "CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj.d"
-  "D:/Programming/REPO/OOP/src/Background/Cell/CellTrap.cpp" "CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj.d"
+  "D:/Programming/REPO/OOP/src/Background/Cell.cpp" "CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj.d"
+  "D:/Programming/REPO/OOP/src/Background/CellFactory/CellFactory.cpp" "CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj.d"
   "D:/Programming/REPO/OOP/src/Background/Field.cpp" "CMakeFiles/OOP.dir/src/Background/Field.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Background/Field.cpp.obj.d"
   "D:/Programming/REPO/OOP/src/Entities/Player.cpp" "CMakeFiles/OOP.dir/src/Entities/Player.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Entities/Player.cpp.obj.d"
+  "D:/Programming/REPO/OOP/src/Events/EventGenerator/EventGenerator.cpp" "CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj.d"
   "D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldChangePos.cpp" "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj.d"
   "D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldRegen.cpp" "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj.d"
   "D:/Programming/REPO/OOP/src/Events/PlayerEvents/Buff.cpp" "CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj" "gcc" "CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj.d"

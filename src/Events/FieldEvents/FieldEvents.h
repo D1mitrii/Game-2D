@@ -7,13 +7,13 @@
 
 class Field;
 
-#include "src/Utils/RNG/RNGenerator.h"
 #include "src/Events/Event.h"
 
 class FieldEvents : public Event{
+protected:
+    Field* field;
 public:
-    void execute() override {};
-    virtual void execute(Field& field) = 0;
+    virtual void execute() = 0;
     virtual ~FieldEvents() = default;
 };
 

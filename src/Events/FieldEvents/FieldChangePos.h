@@ -11,8 +11,8 @@
 
 class FieldChangePos : public FieldEvents{
 public:
-    FieldChangePos() = default;
-    void execute(Field& field) final;
+    explicit FieldChangePos(Field* fl);
+    void execute() final;
     ~FieldChangePos() override = default;
 };
 

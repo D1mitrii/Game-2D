@@ -1,28 +1,28 @@
 #ifndef OOP_FIELD_H
 #define OOP_FIELD_H
 
+class CellFactory;
 
 #include <vector>
-#include "src/Background/Cell/CellBase.h"
-#include "src/Background/Cell/CellWall.h"
-#include "src/Background/Cell/CellCoin.h"
-#include "src/Background/Cell/CellTrap.h"
-#include "src/Background/Cell/CellMove.h"
-#include "src/Background/Cell/CellBuff.h"
 #include "utility"
-#include "src/Utils/RNG/RNGenerator.h"
 #include "src/Entities/Player.h"
 #include "src/Utils/Obs/ISubject.h"
+#include "CellFactory/CellFactory.h"
+#include <functional>
+#include <map>
 
 class Field : public ISubject{
 private:
     int height;
     int width;
+    CellFactory* factory;
+    std::map<std::string, std::function<Cell()> > cells;
     std::pair<int, int> player_position;
-    std::vector<std::vector<ICell*>> field;
+    std::vector<std::vector<Cell>> field;
     void check_position(std::pair<int, int> pair);
     std::vector<IObserver*> observers;
-    ICell* generate_cell();
+    void deconstruct();
+    void set_cell(int y);
 public:
     explicit Field(int a = 10, int b = 10);
     Field(const Field& other);
@@ -30,14 +30,13 @@ public:
     void swap(Field& other);
     Field& operator=(const Field& other);
     Field& operator=(Field&& other);
+    void set_factory(EventGenerator* ev_gen);
     void generate_field();
-    void deconstruct();
-    Event* change_player_position(Player::Directions direction);
+    void change_player_position(Player::Directions direction);
     int get_height() const;
     int get_width() const;
-    ICell* get_cell(int x, int y) const;
+    Cell& get_cell(int x, int y);
     std::pair<int, int> get_position() const;
-    void set_base_cell();
     ~Field();
 };
 

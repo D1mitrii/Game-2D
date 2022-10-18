@@ -293,56 +293,11 @@ CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldChangePos.cpp -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldChangePos.cpp.s
 
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj: CMakeFiles/OOP.dir/flags.make
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj: ../src/Background/Cell/CellTrap.cpp
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\Cell\CellTrap.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\Cell\CellTrap.cpp.obj -c D:\Programming\REPO\OOP\src\Background\Cell\CellTrap.cpp
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.i"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\Cell\CellTrap.cpp > CMakeFiles\OOP.dir\src\Background\Cell\CellTrap.cpp.i
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.s"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\Cell\CellTrap.cpp -o CMakeFiles\OOP.dir\src\Background\Cell\CellTrap.cpp.s
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj: CMakeFiles/OOP.dir/flags.make
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj: ../src/Background/Cell/CellCoin.cpp
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\Cell\CellCoin.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\Cell\CellCoin.cpp.obj -c D:\Programming\REPO\OOP\src\Background\Cell\CellCoin.cpp
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.i"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\Cell\CellCoin.cpp > CMakeFiles\OOP.dir\src\Background\Cell\CellCoin.cpp.i
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.s"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\Cell\CellCoin.cpp -o CMakeFiles\OOP.dir\src\Background\Cell\CellCoin.cpp.s
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj: CMakeFiles/OOP.dir/flags.make
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj: ../src/Background/Cell/CellMove.cpp
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\Cell\CellMove.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\Cell\CellMove.cpp.obj -c D:\Programming\REPO\OOP\src\Background\Cell\CellMove.cpp
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.i"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\Cell\CellMove.cpp > CMakeFiles\OOP.dir\src\Background\Cell\CellMove.cpp.i
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.s"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\Cell\CellMove.cpp -o CMakeFiles\OOP.dir\src\Background\Cell\CellMove.cpp.s
-
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj: CMakeFiles/OOP.dir/flags.make
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj: ../src/Events/PlayerEvents/Buff.cpp
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\PlayerEvents\Buff.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\PlayerEvents\Buff.cpp.obj -c D:\Programming\REPO\OOP\src\Events\PlayerEvents\Buff.cpp
 
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.i: cmake_force
@@ -353,26 +308,11 @@ CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\PlayerEvents\Buff.cpp -o CMakeFiles\OOP.dir\src\Events\PlayerEvents\Buff.cpp.s
 
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj: CMakeFiles/OOP.dir/flags.make
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj: ../src/Background/Cell/CellBuff.cpp
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\Cell\CellBuff.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\Cell\CellBuff.cpp.obj -c D:\Programming\REPO\OOP\src\Background\Cell\CellBuff.cpp
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.i"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\Cell\CellBuff.cpp > CMakeFiles\OOP.dir\src\Background\Cell\CellBuff.cpp.i
-
-CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.s"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\Cell\CellBuff.cpp -o CMakeFiles\OOP.dir\src\Background\Cell\CellBuff.cpp.s
-
 CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/flags.make
 CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
 CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: ../src/Events/FieldEvents/FieldRegen.cpp
 CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.obj -c D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldRegen.cpp
 
 CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.i: cmake_force
@@ -387,7 +327,7 @@ CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: CMakeFiles/OOP.dir
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: ../src/Events/PlayerEvents/HealEvent.cpp
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\PlayerEvents\HealEvent.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\PlayerEvents\HealEvent.cpp.obj -c D:\Programming\REPO\OOP\src\Events\PlayerEvents\HealEvent.cpp
 
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.i: cmake_force
@@ -402,7 +342,7 @@ CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj: CMakeFiles/OOP.dir/flag
 CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
 CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj: ../src/Utils/Med/MediatorObject.cpp
 CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj -MF CMakeFiles\OOP.dir\src\Utils\Med\MediatorObject.cpp.obj.d -o CMakeFiles\OOP.dir\src\Utils\Med\MediatorObject.cpp.obj -c D:\Programming\REPO\OOP\src\Utils\Med\MediatorObject.cpp
 
 CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.i: cmake_force
@@ -417,7 +357,7 @@ CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj: CMakeFiles/OOP.dir/flags.make
 CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
 CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj: ../src/Utils/Med/Mediator.cpp
 CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj -MF CMakeFiles\OOP.dir\src\Utils\Med\Mediator.cpp.obj.d -o CMakeFiles\OOP.dir\src\Utils\Med\Mediator.cpp.obj -c D:\Programming\REPO\OOP\src\Utils\Med\Mediator.cpp
 
 CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.i: cmake_force
@@ -427,6 +367,51 @@ CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.i: cmake_force
 CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Utils\Med\Mediator.cpp -o CMakeFiles\OOP.dir\src\Utils\Med\Mediator.cpp.s
+
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj: ../src/Background/Cell.cpp
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\Cell.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\Cell.cpp.obj -c D:\Programming\REPO\OOP\src\Background\Cell.cpp
+
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/Cell.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\Cell.cpp > CMakeFiles\OOP.dir\src\Background\Cell.cpp.i
+
+CMakeFiles/OOP.dir/src/Background/Cell.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/Cell.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\Cell.cpp -o CMakeFiles\OOP.dir\src\Background\Cell.cpp.s
+
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj: ../src/Background/CellFactory/CellFactory.cpp
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\CellFactory\CellFactory.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\CellFactory\CellFactory.cpp.obj -c D:\Programming\REPO\OOP\src\Background\CellFactory\CellFactory.cpp
+
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\CellFactory\CellFactory.cpp > CMakeFiles\OOP.dir\src\Background\CellFactory\CellFactory.cpp.i
+
+CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\CellFactory\CellFactory.cpp -o CMakeFiles\OOP.dir\src\Background\CellFactory\CellFactory.cpp.s
+
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj: ../src/Events/EventGenerator/EventGenerator.cpp
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\EventGenerator\EventGenerator.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\EventGenerator\EventGenerator.cpp.obj -c D:\Programming\REPO\OOP\src\Events\EventGenerator\EventGenerator.cpp
+
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Events\EventGenerator\EventGenerator.cpp > CMakeFiles\OOP.dir\src\Events\EventGenerator\EventGenerator.cpp.i
+
+CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\EventGenerator\EventGenerator.cpp -o CMakeFiles\OOP.dir\src\Events\EventGenerator\EventGenerator.cpp.s
 
 # Object files for target OOP
 OOP_OBJECTS = \
@@ -445,15 +430,14 @@ OOP_OBJECTS = \
 "CMakeFiles/OOP.dir/src/Events/PlayerEvents/CoinEvent.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Utils/RNG/RNGenerator.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj"
+"CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj"
 
 # External object files for target OOP
 OOP_EXTERNAL_OBJECTS =
@@ -473,20 +457,19 @@ OOP.exe: CMakeFiles/OOP.dir/src/Views/PlayerView.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/CoinEvent.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/RNG/RNGenerator.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj
-OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj
-OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj
-OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj
-OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/build.make
 OOP.exe: CMakeFiles/OOP.dir/linklibs.rsp
 OOP.exe: CMakeFiles/OOP.dir/objects1.rsp
 OOP.exe: CMakeFiles/OOP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable OOP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable OOP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OOP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -18,7 +18,7 @@ private:
     Field* field;
 public:
     FieldView() = default;
-    FieldView(Field* map);
+    explicit FieldView(Field* map);
     ~FieldView() = default;
     void update() override;
 };

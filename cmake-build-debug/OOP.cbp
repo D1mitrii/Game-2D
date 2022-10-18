@@ -87,37 +87,16 @@
 		<Unit filename="D:/Programming/REPO/OOP/main.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellBase.h">
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellBuff.cpp">
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellBuff.h">
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/CellFactory/CellFactory.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellCoin.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellCoin.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellMove.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellMove.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellTrap.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellTrap.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/CellWall.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell/ICell.h">
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/CellFactory/CellFactory.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/Field.cpp">
@@ -133,6 +112,12 @@
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/Event.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/EventGenerator.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/EventGenerator.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldChangePos.cpp">

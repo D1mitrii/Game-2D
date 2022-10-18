@@ -32,7 +32,6 @@ void FieldView::write_horizontal_border() const {
 }
 
 FieldView::FieldView(Field *map) : field(map) {
-    printf("FieldView:%p|%p", this, map);
     field->attach(this);
 }
 

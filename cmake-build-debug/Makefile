@@ -152,101 +152,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Background/Cell/CellBuff.obj: src/Background/Cell/CellBuff.cpp.obj
-.PHONY : src/Background/Cell/CellBuff.obj
+src/Background/Cell.obj: src/Background/Cell.cpp.obj
+.PHONY : src/Background/Cell.obj
 
 # target to build an object file
-src/Background/Cell/CellBuff.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.obj
-.PHONY : src/Background/Cell/CellBuff.cpp.obj
+src/Background/Cell.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj
+.PHONY : src/Background/Cell.cpp.obj
 
-src/Background/Cell/CellBuff.i: src/Background/Cell/CellBuff.cpp.i
-.PHONY : src/Background/Cell/CellBuff.i
+src/Background/Cell.i: src/Background/Cell.cpp.i
+.PHONY : src/Background/Cell.i
 
 # target to preprocess a source file
-src/Background/Cell/CellBuff.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.i
-.PHONY : src/Background/Cell/CellBuff.cpp.i
+src/Background/Cell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell.cpp.i
+.PHONY : src/Background/Cell.cpp.i
 
-src/Background/Cell/CellBuff.s: src/Background/Cell/CellBuff.cpp.s
-.PHONY : src/Background/Cell/CellBuff.s
+src/Background/Cell.s: src/Background/Cell.cpp.s
+.PHONY : src/Background/Cell.s
 
 # target to generate assembly for a file
-src/Background/Cell/CellBuff.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellBuff.cpp.s
-.PHONY : src/Background/Cell/CellBuff.cpp.s
+src/Background/Cell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell.cpp.s
+.PHONY : src/Background/Cell.cpp.s
 
-src/Background/Cell/CellCoin.obj: src/Background/Cell/CellCoin.cpp.obj
-.PHONY : src/Background/Cell/CellCoin.obj
+src/Background/CellFactory/CellFactory.obj: src/Background/CellFactory/CellFactory.cpp.obj
+.PHONY : src/Background/CellFactory/CellFactory.obj
 
 # target to build an object file
-src/Background/Cell/CellCoin.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.obj
-.PHONY : src/Background/Cell/CellCoin.cpp.obj
+src/Background/CellFactory/CellFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj
+.PHONY : src/Background/CellFactory/CellFactory.cpp.obj
 
-src/Background/Cell/CellCoin.i: src/Background/Cell/CellCoin.cpp.i
-.PHONY : src/Background/Cell/CellCoin.i
-
-# target to preprocess a source file
-src/Background/Cell/CellCoin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.i
-.PHONY : src/Background/Cell/CellCoin.cpp.i
-
-src/Background/Cell/CellCoin.s: src/Background/Cell/CellCoin.cpp.s
-.PHONY : src/Background/Cell/CellCoin.s
-
-# target to generate assembly for a file
-src/Background/Cell/CellCoin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellCoin.cpp.s
-.PHONY : src/Background/Cell/CellCoin.cpp.s
-
-src/Background/Cell/CellMove.obj: src/Background/Cell/CellMove.cpp.obj
-.PHONY : src/Background/Cell/CellMove.obj
-
-# target to build an object file
-src/Background/Cell/CellMove.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.obj
-.PHONY : src/Background/Cell/CellMove.cpp.obj
-
-src/Background/Cell/CellMove.i: src/Background/Cell/CellMove.cpp.i
-.PHONY : src/Background/Cell/CellMove.i
+src/Background/CellFactory/CellFactory.i: src/Background/CellFactory/CellFactory.cpp.i
+.PHONY : src/Background/CellFactory/CellFactory.i
 
 # target to preprocess a source file
-src/Background/Cell/CellMove.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.i
-.PHONY : src/Background/Cell/CellMove.cpp.i
+src/Background/CellFactory/CellFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.i
+.PHONY : src/Background/CellFactory/CellFactory.cpp.i
 
-src/Background/Cell/CellMove.s: src/Background/Cell/CellMove.cpp.s
-.PHONY : src/Background/Cell/CellMove.s
-
-# target to generate assembly for a file
-src/Background/Cell/CellMove.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellMove.cpp.s
-.PHONY : src/Background/Cell/CellMove.cpp.s
-
-src/Background/Cell/CellTrap.obj: src/Background/Cell/CellTrap.cpp.obj
-.PHONY : src/Background/Cell/CellTrap.obj
-
-# target to build an object file
-src/Background/Cell/CellTrap.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.obj
-.PHONY : src/Background/Cell/CellTrap.cpp.obj
-
-src/Background/Cell/CellTrap.i: src/Background/Cell/CellTrap.cpp.i
-.PHONY : src/Background/Cell/CellTrap.i
-
-# target to preprocess a source file
-src/Background/Cell/CellTrap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.i
-.PHONY : src/Background/Cell/CellTrap.cpp.i
-
-src/Background/Cell/CellTrap.s: src/Background/Cell/CellTrap.cpp.s
-.PHONY : src/Background/Cell/CellTrap.s
+src/Background/CellFactory/CellFactory.s: src/Background/CellFactory/CellFactory.cpp.s
+.PHONY : src/Background/CellFactory/CellFactory.s
 
 # target to generate assembly for a file
-src/Background/Cell/CellTrap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell/CellTrap.cpp.s
-.PHONY : src/Background/Cell/CellTrap.cpp.s
+src/Background/CellFactory/CellFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.s
+.PHONY : src/Background/CellFactory/CellFactory.cpp.s
 
 src/Background/Field.obj: src/Background/Field.cpp.obj
 .PHONY : src/Background/Field.obj
@@ -295,6 +247,30 @@ src/Entities/Player.s: src/Entities/Player.cpp.s
 src/Entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Entities/Player.cpp.s
 .PHONY : src/Entities/Player.cpp.s
+
+src/Events/EventGenerator/EventGenerator.obj: src/Events/EventGenerator/EventGenerator.cpp.obj
+.PHONY : src/Events/EventGenerator/EventGenerator.obj
+
+# target to build an object file
+src/Events/EventGenerator/EventGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj
+.PHONY : src/Events/EventGenerator/EventGenerator.cpp.obj
+
+src/Events/EventGenerator/EventGenerator.i: src/Events/EventGenerator/EventGenerator.cpp.i
+.PHONY : src/Events/EventGenerator/EventGenerator.i
+
+# target to preprocess a source file
+src/Events/EventGenerator/EventGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.i
+.PHONY : src/Events/EventGenerator/EventGenerator.cpp.i
+
+src/Events/EventGenerator/EventGenerator.s: src/Events/EventGenerator/EventGenerator.cpp.s
+.PHONY : src/Events/EventGenerator/EventGenerator.s
+
+# target to generate assembly for a file
+src/Events/EventGenerator/EventGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s
+.PHONY : src/Events/EventGenerator/EventGenerator.cpp.s
 
 src/Events/FieldEvents/FieldChangePos.obj: src/Events/FieldEvents/FieldChangePos.cpp.obj
 .PHONY : src/Events/FieldEvents/FieldChangePos.obj
@@ -716,24 +692,21 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/Background/Cell/CellBuff.obj
-	@echo ... src/Background/Cell/CellBuff.i
-	@echo ... src/Background/Cell/CellBuff.s
-	@echo ... src/Background/Cell/CellCoin.obj
-	@echo ... src/Background/Cell/CellCoin.i
-	@echo ... src/Background/Cell/CellCoin.s
-	@echo ... src/Background/Cell/CellMove.obj
-	@echo ... src/Background/Cell/CellMove.i
-	@echo ... src/Background/Cell/CellMove.s
-	@echo ... src/Background/Cell/CellTrap.obj
-	@echo ... src/Background/Cell/CellTrap.i
-	@echo ... src/Background/Cell/CellTrap.s
+	@echo ... src/Background/Cell.obj
+	@echo ... src/Background/Cell.i
+	@echo ... src/Background/Cell.s
+	@echo ... src/Background/CellFactory/CellFactory.obj
+	@echo ... src/Background/CellFactory/CellFactory.i
+	@echo ... src/Background/CellFactory/CellFactory.s
 	@echo ... src/Background/Field.obj
 	@echo ... src/Background/Field.i
 	@echo ... src/Background/Field.s
 	@echo ... src/Entities/Player.obj
 	@echo ... src/Entities/Player.i
 	@echo ... src/Entities/Player.s
+	@echo ... src/Events/EventGenerator/EventGenerator.obj
+	@echo ... src/Events/EventGenerator/EventGenerator.i
+	@echo ... src/Events/EventGenerator/EventGenerator.s
 	@echo ... src/Events/FieldEvents/FieldChangePos.obj
 	@echo ... src/Events/FieldEvents/FieldChangePos.i
 	@echo ... src/Events/FieldEvents/FieldChangePos.s

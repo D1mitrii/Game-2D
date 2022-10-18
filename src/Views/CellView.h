@@ -5,18 +5,20 @@
 #ifndef OOP_CELLVIEW_H
 #define OOP_CELLVIEW_H
 
-#include "src/Background/Cell/CellBase.h"
-#include "src/Background/Cell/CellCoin.h"
-#include "src/Background/Cell/CellTrap.h"
-#include "src/Background/Cell/CellWall.h"
-#include "src/Background/Cell/CellMove.h"
-#include "src/Background/Cell/CellBuff.h"
+#include "src/Background/Cell.h"
+#include "src/Events/PlayerEvents/CoinEvent.h"
+#include "src/Events/PlayerEvents/HealEvent.h"
+#include "src/Events/PlayerEvents/Buff.h"
+#include "src/Events/PlayerEvents/PoisonTrap.h"
+#include "src/Events/PlayerEvents/FrozenTrap.h"
+#include "src/Events/FieldEvents/FieldRegen.h"
+#include "src/Events/FieldEvents/FieldChangePos.h"
 
 class CellView {
 private:
     char cell_view;
 public:
-    explicit CellView(ICell* cell);
+    explicit CellView(Cell& cell);
     ~CellView() = default;
     char get_view() const;
 };

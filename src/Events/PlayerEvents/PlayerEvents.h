@@ -8,9 +8,10 @@
 #include "src/Entities/Player.h"
 
 class PlayerEvents : public Event {
+protected:
+    Player* player;
 public:
-    void execute() override {};
-    virtual void execute(Player& player) = 0;
+    void execute() override = 0;
     virtual ~PlayerEvents() = default;
 };
 

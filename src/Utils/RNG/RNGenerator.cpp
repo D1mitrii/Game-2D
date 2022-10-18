@@ -6,7 +6,7 @@
 
 RNGenerator::RNGenerator() {
     std::random_device dev;
-    seed = dev();
+    this->seed = dev();
     std::mt19937 gen(seed);
     this->rang_gen = gen;
 }

@@ -4,9 +4,13 @@
 
 #include "CoinEvent.h"
 
-void CoinEvent::execute(Player &player) {
-    RNGenerator generator;
-    std::uniform_real_distribution<double> distr{0.5, 2.0};
-    int coins_count = 2.0 * generator.get_random_value<double>(distr) + player.get_coins();
-    player.set_coins( coins_count);
+
+CoinEvent::CoinEvent(Player *pl, int coin) {
+    player = pl;
+    coins = coin;
+}
+
+void CoinEvent::execute() {
+    int coins_count = coins + player->get_coins();
+    player->set_coins( coins_count);
 }

@@ -4,7 +4,12 @@
 
 #include "FieldChangePos.h"
 
-void FieldChangePos::execute(Field &field) {
+
+FieldChangePos::FieldChangePos(Field *fl) {
+    field = fl;
+}
+
+void FieldChangePos::execute() {
     RNGenerator generator;
     std::uniform_int_distribution<int> distr {1, 4};
     Player::Directions dir;
@@ -22,5 +27,5 @@ void FieldChangePos::execute(Field &field) {
             dir = Player::DOWN;
             break;
     }
-    field.change_player_position(dir);
+    field->change_player_position(dir);
 }

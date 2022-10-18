@@ -1,7 +1,6 @@
 #include "Field.h"
 
-Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
-    generate_field();
+Field::Field(int a, int b) : width(a), height(b), player_position({0,0}), factory(nullptr) {
 }
 
 void Field::swap(Field &other) {
@@ -10,6 +9,7 @@ void Field::swap(Field &other) {
     std::swap(field, other.field);
     std::swap(player_position, other.player_position);
     std::swap(observers, other.observers);
+    std::swap(factory, other.factory);
 }
 
 Field &Field::operator=(Field &&other) {
@@ -41,38 +41,43 @@ Field &Field::operator=(const Field &other) {
     return *this;
 }
 
+
+void Field::set_cell(int y) {
+    RNGenerator gen;
+    std::uniform_int_distribution<int> dist {0, 10};
+    int num = gen.get_random_value<int>(dist);
+    if(num < 5){
+        field.at(y).push_back(cells["BASE"]());
+        return;
+    } else if(num < 7){
+        field.at(y).push_back(cells["WALL"]());
+        return;
+    } else{
+        field.at(y).push_back(cells["EVENT"]());
+        return;
+    }
+}
+
+void Field::set_factory(EventGenerator* ev_gen) {
+    delete factory;
+    factory = new CellFactory(ev_gen);
+    cells["BASE"] = std::function<Cell()>([this]() { return factory->base_cell();});
+    cells["WALL"] = std::function<Cell()>([this]() { return factory->wall_cell();});
+    cells["EVENT"] = std::function<Cell()> ([this]() { return factory->event_cell();});
+}
+
 void Field::generate_field() {
+    deconstruct();
     for(int i = 0; i != height; i++){
         field.emplace_back();
         for (int j = 0; j != width; j++) {
-                field.at(i).push_back(generate_cell());
+            set_cell(i);
         }
     }
-    delete field.at(player_position.second).at(player_position.first);
-    field.at(player_position.second).at(player_position.first) = new CellBase;
     notify();
 }
 
-ICell* Field::generate_cell(){
-    RNGenerator generator;
-    std::uniform_int_distribution<int> distr{1, 13};
-    switch (generator.get_random_value<int>(distr)) {
-        case 1:
-            return new CellWall;
-        case 2:
-            return new CellCoin;
-        case 3:
-            return new CellTrap;
-        case 4:
-            return new CellMove;
-        case 5:
-            return new CellBuff;
-        default:
-            return new CellBase;
-    }
-}
-
-Event* Field::change_player_position(Player::Directions direction) {
+void Field::change_player_position(Player::Directions direction) {
 
     std::pair<int, int> temp = player_position;
 
@@ -98,7 +103,10 @@ Event* Field::change_player_position(Player::Directions direction) {
     check_position(temp);
 
     notify();
-    return field.at(player_position.second).at(player_position.first)->get_event();
+    if(field.at(player_position.second).at(player_position.first).get_event() != nullptr){
+        field.at(player_position.second).at(player_position.first).get_event()->execute();
+        field.at(player_position.second).at(player_position.first).set_event(nullptr);
+    }
 }
 
 int Field::get_height() const {
@@ -107,40 +115,39 @@ int Field::get_height() const {
 
 int Field::get_width() const {
     return this->width;
-};
+}
 
-ICell* Field::get_cell(int x, int y) const {
-    return this->field.at(y).at(x);
+Cell& Field::get_cell(int x, int y){
+    return field.at(y).at(x);
 }
 
 void Field::check_position(std::pair<int, int> pair) {
-    if(dynamic_cast<CellWall*>(field.at(pair.second).at(pair.first)) != nullptr){
+    if(field.at(pair.second).at(pair.first).is_wall()){
         return;
     }
     this->player_position = pair;
 }
 
+void Field::deconstruct() {
+    if(field.empty()){
+        return;
+    }
+    for (int i = 0; i != height; ++i) {
+        for (int j = 0; j != width; ++j) {
+            field.at(i).at(j).set_event(nullptr);
+        }
+        field.at(i).clear();
+    }
+    field.clear();
+}
+
 Field::~Field() {
     deconstruct();
+    delete factory;
 }
 
 std::pair<int, int> Field::get_position() const {
     return player_position;
-}
-
-void Field::set_base_cell() {
-    delete field.at(player_position.second).at(player_position.first);
-    field.at(player_position.second).at(player_position.first) = new CellBase;
-}
-
-void Field::deconstruct() {
-    if(field.empty())
-        return;
-    for (int i = 0; i != height; ++i) {
-        for (int j = 0; j != width; ++j)
-            delete field.at(i).at(j);
-    }
-    field.clear();
 }
 
 

@@ -10,7 +10,8 @@
 
 class PoisonTrap : public PlayerEvents {
 public:
-    void execute(Player& player) final;
+    explicit PoisonTrap(Player* pl);
+    void execute() final;
     ~PoisonTrap() override = default;
 };
 

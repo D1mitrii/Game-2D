@@ -6,7 +6,8 @@
 
 class FrozenTrap : public PlayerEvents {
 public:
-    void execute(Player& player) final;
+    explicit FrozenTrap(Player* pl);
+    void execute() final;
     ~FrozenTrap() override = default;
 };
 

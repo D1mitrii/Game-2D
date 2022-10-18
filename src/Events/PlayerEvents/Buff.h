@@ -10,9 +10,11 @@
 #include "src/Utils/RNG/RNGenerator.h"
 
 class Buff : public PlayerEvents {
+private:
+    int power_up;
 public:
-    Buff() = default;
-    void execute(Player& player) final;
+    explicit Buff(Player* pl, int value);
+    void execute() final;
     ~Buff() override = default;
 };
 

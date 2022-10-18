@@ -4,6 +4,9 @@ void Game::start() {
     status = START;
     mediator->notify(this, IMediator::GAME_STATUS);
     status = INPROGRESS;
+    auto* event_gen = new EventGenerator(player, field);
+    field->set_factory(event_gen);
+    field->generate_field();
     loop();
 }
 
@@ -17,20 +20,7 @@ void Game::reaction() {
         status = END;
         return;
     }
-    event_handler(this->field->change_player_position(cur_step));
-}
-
-void Game::event_handler(Event* ptr_event) {
-    if(ptr_event == nullptr) {
-        return;
-    }
-    if(auto temp = dynamic_cast<PlayerEvents*>(ptr_event)){
-        temp->execute(*player);
-    }
-    if(auto temp = dynamic_cast<FieldEvents*>(ptr_event)){
-        temp->execute(*field);
-    }
-    field->set_base_cell();
+    field->change_player_position(cur_step);
     is_end();
 }
 
@@ -70,7 +60,6 @@ void Game::set_step(Player::Directions cur) {
 }
 
 void Game::loop() {
-    field->generate_field();
     while (status == INPROGRESS){
         mediator->notify(this, IMediator::STEP);
         reaction();

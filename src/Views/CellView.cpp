@@ -4,25 +4,29 @@
 
 #include "CellView.h"
 
-CellView::CellView(ICell* cell) {
-    if(dynamic_cast<CellWall*>(cell) != nullptr){
+CellView::CellView(Cell& cell) {
+    if(cell.is_wall()){
         cell_view = '#';
-    } else if(dynamic_cast<CellBase*>(cell) != nullptr){
-        cell_view = ' ';
-    } else if (dynamic_cast<CellCoin*>(cell) != nullptr){
-        cell_view = 'C';
+        return;
     }
-    else if (dynamic_cast<CellTrap*>(cell) != nullptr){
+    if(dynamic_cast<CoinEvent*>(cell.get_event()) != nullptr){
+        cell_view = 'C';
+    }else if(dynamic_cast<Buff*>(cell.get_event()) != nullptr){
+        cell_view = 'B';
+    }else if(dynamic_cast<PoisonTrap*>(cell.get_event()) != nullptr || dynamic_cast<FrozenTrap*>(cell.get_event()) != nullptr){
         cell_view = 'T';
     }
-    else if (dynamic_cast<CellMove*>(cell) != nullptr){
-        cell_view = '?';
+    else if(dynamic_cast<HealEvent*>(cell.get_event()) != nullptr) {
+        cell_view = 'H';
     }
-    else if (dynamic_cast<CellBuff*>(cell) != nullptr){
-        cell_view = 'B';
+    else if(dynamic_cast<FieldRegen*>(cell.get_event()) != nullptr) {
+        cell_view = 'N';
+    }
+    else if(dynamic_cast<FieldChangePos*>(cell.get_event()) != nullptr) {
+        cell_view = '*';
     }
     else{
-        cell_view = 'P';
+        cell_view = ' ';
     }
 }
 

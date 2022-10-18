@@ -4,7 +4,11 @@
 
 #include "FieldRegen.h"
 
-void FieldRegen::execute(Field &field) {
-    field.deconstruct();
-    field.generate_field();
+
+FieldRegen::FieldRegen(Field *fl) {
+    field = fl;
+}
+
+void FieldRegen::execute() {
+    field->generate_field();
 }

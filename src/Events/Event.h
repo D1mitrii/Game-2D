@@ -4,9 +4,8 @@
 
 class Event {
 public:
-    Event() = default;
-    virtual ~Event() = default;
     virtual void execute() = 0;
+    virtual ~Event() = default;
 };
 
 

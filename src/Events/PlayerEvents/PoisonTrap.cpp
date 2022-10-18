@@ -4,7 +4,11 @@
 
 #include "PoisonTrap.h"
 
-void PoisonTrap::execute(Player &player) {
-    player.set_hearts(player.get_hearts() - 1);
+PoisonTrap::PoisonTrap(Player *pl) {
+    player = pl;
+}
+
+void PoisonTrap::execute() {
+    player->set_hearts(player->get_hearts() - 1);
 
 }

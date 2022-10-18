@@ -5,8 +5,8 @@
 
 class HealEvent : public PlayerEvents{
 public:
-    HealEvent() = default;
-    void execute(Player& player) final;
+    explicit HealEvent(Player* pl);
+    void execute() final;
     ~HealEvent() override = default;
 };
 

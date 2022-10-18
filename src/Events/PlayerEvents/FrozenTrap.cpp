@@ -4,6 +4,10 @@
 
 #include "FrozenTrap.h"
 
-void FrozenTrap::execute(Player &player) {
-    player.set_power(player.get_power()-1);
+FrozenTrap::FrozenTrap(Player *pl) {
+    player = pl;
+}
+
+void FrozenTrap::execute() {
+    player->set_power(player->get_power()-1);
 }

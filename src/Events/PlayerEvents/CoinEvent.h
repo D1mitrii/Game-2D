@@ -5,9 +5,11 @@
 #include "src/Utils/RNG/RNGenerator.h"
 
 class CoinEvent : public PlayerEvents {
+private:
+    int coins;
 public:
-    CoinEvent() = default;
-    void execute(Player& player) final;
+    CoinEvent(Player* pl, int coin);
+    void execute();
     ~CoinEvent() override = default;
 };
 
