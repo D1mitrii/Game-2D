@@ -224,6 +224,30 @@ src/Background/Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Field.cpp.s
 .PHONY : src/Background/Field.cpp.s
 
+src/Background/FieldGenerator/FieldGenerator.obj: src/Background/FieldGenerator/FieldGenerator.cpp.obj
+.PHONY : src/Background/FieldGenerator/FieldGenerator.obj
+
+# target to build an object file
+src/Background/FieldGenerator/FieldGenerator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj
+.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.obj
+
+src/Background/FieldGenerator/FieldGenerator.i: src/Background/FieldGenerator/FieldGenerator.cpp.i
+.PHONY : src/Background/FieldGenerator/FieldGenerator.i
+
+# target to preprocess a source file
+src/Background/FieldGenerator/FieldGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.i
+.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.i
+
+src/Background/FieldGenerator/FieldGenerator.s: src/Background/FieldGenerator/FieldGenerator.cpp.s
+.PHONY : src/Background/FieldGenerator/FieldGenerator.s
+
+# target to generate assembly for a file
+src/Background/FieldGenerator/FieldGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.s
+.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.s
+
 src/Entities/Player.obj: src/Entities/Player.cpp.obj
 .PHONY : src/Entities/Player.obj
 
@@ -296,29 +320,29 @@ src/Events/FieldEvents/FieldChangePos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.s
 .PHONY : src/Events/FieldEvents/FieldChangePos.cpp.s
 
-src/Events/FieldEvents/FieldRegen.obj: src/Events/FieldEvents/FieldRegen.cpp.obj
-.PHONY : src/Events/FieldEvents/FieldRegen.obj
+src/Events/FieldEvents/FieldNoWalls.obj: src/Events/FieldEvents/FieldNoWalls.cpp.obj
+.PHONY : src/Events/FieldEvents/FieldNoWalls.obj
 
 # target to build an object file
-src/Events/FieldEvents/FieldRegen.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj
-.PHONY : src/Events/FieldEvents/FieldRegen.cpp.obj
+src/Events/FieldEvents/FieldNoWalls.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj
+.PHONY : src/Events/FieldEvents/FieldNoWalls.cpp.obj
 
-src/Events/FieldEvents/FieldRegen.i: src/Events/FieldEvents/FieldRegen.cpp.i
-.PHONY : src/Events/FieldEvents/FieldRegen.i
+src/Events/FieldEvents/FieldNoWalls.i: src/Events/FieldEvents/FieldNoWalls.cpp.i
+.PHONY : src/Events/FieldEvents/FieldNoWalls.i
 
 # target to preprocess a source file
-src/Events/FieldEvents/FieldRegen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.i
-.PHONY : src/Events/FieldEvents/FieldRegen.cpp.i
+src/Events/FieldEvents/FieldNoWalls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.i
+.PHONY : src/Events/FieldEvents/FieldNoWalls.cpp.i
 
-src/Events/FieldEvents/FieldRegen.s: src/Events/FieldEvents/FieldRegen.cpp.s
-.PHONY : src/Events/FieldEvents/FieldRegen.s
+src/Events/FieldEvents/FieldNoWalls.s: src/Events/FieldEvents/FieldNoWalls.cpp.s
+.PHONY : src/Events/FieldEvents/FieldNoWalls.s
 
 # target to generate assembly for a file
-src/Events/FieldEvents/FieldRegen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.s
-.PHONY : src/Events/FieldEvents/FieldRegen.cpp.s
+src/Events/FieldEvents/FieldNoWalls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.s
+.PHONY : src/Events/FieldEvents/FieldNoWalls.cpp.s
 
 src/Events/PlayerEvents/Buff.obj: src/Events/PlayerEvents/Buff.cpp.obj
 .PHONY : src/Events/PlayerEvents/Buff.obj
@@ -701,6 +725,9 @@ help:
 	@echo ... src/Background/Field.obj
 	@echo ... src/Background/Field.i
 	@echo ... src/Background/Field.s
+	@echo ... src/Background/FieldGenerator/FieldGenerator.obj
+	@echo ... src/Background/FieldGenerator/FieldGenerator.i
+	@echo ... src/Background/FieldGenerator/FieldGenerator.s
 	@echo ... src/Entities/Player.obj
 	@echo ... src/Entities/Player.i
 	@echo ... src/Entities/Player.s
@@ -710,9 +737,9 @@ help:
 	@echo ... src/Events/FieldEvents/FieldChangePos.obj
 	@echo ... src/Events/FieldEvents/FieldChangePos.i
 	@echo ... src/Events/FieldEvents/FieldChangePos.s
-	@echo ... src/Events/FieldEvents/FieldRegen.obj
-	@echo ... src/Events/FieldEvents/FieldRegen.i
-	@echo ... src/Events/FieldEvents/FieldRegen.s
+	@echo ... src/Events/FieldEvents/FieldNoWalls.obj
+	@echo ... src/Events/FieldEvents/FieldNoWalls.i
+	@echo ... src/Events/FieldEvents/FieldNoWalls.s
 	@echo ... src/Events/PlayerEvents/Buff.obj
 	@echo ... src/Events/PlayerEvents/Buff.i
 	@echo ... src/Events/PlayerEvents/Buff.s

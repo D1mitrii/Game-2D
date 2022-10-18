@@ -11,7 +11,7 @@
 #include "src/Events/PlayerEvents/Buff.h"
 #include "src/Events/PlayerEvents/PoisonTrap.h"
 #include "src/Events/PlayerEvents/FrozenTrap.h"
-#include "src/Events/FieldEvents/FieldRegen.h"
+#include "src/Events/FieldEvents/FieldNoWalls.h"
 #include "src/Events/FieldEvents/FieldChangePos.h"
 
 class CellView {

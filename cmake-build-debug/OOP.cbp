@@ -105,6 +105,12 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/Field.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/FieldGenerator/FieldGenerator.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Background/FieldGenerator/FieldGenerator.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Entities/Player.cpp">
 			<Option target="OOP"/>
 		</Unit>
@@ -129,10 +135,10 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldEvents.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldRegen.cpp">
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldNoWalls.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldRegen.h">
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldNoWalls.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/PlayerEvents/Buff.cpp">

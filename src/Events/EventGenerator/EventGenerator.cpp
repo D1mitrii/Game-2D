@@ -17,11 +17,37 @@ Event* EventGenerator::generate() {
         return new FrozenTrap(pl);
     } else if(num < 70){
         return new CoinEvent(pl, generator.get_random_value<int>(coins));
-    } else if(num < 85){
-        return new FieldRegen(fl);
+    } else if(num < 80){
+        return new Buff(pl, generator.get_random_value<int>(buf));
+    } else if(num < 89){
+        return new FieldNoWalls(fl);
+    } else if(num < 90){
+        return new FieldChangePos(fl);
     }
-    else if(num <= 100){
+    else{
         return new HealEvent(pl);
     }
-    return nullptr;
+}
+
+EventGenerator &EventGenerator::operator=(const EventGenerator &other) {
+    if(this != &other){
+        EventGenerator(other).swap(*this);
+    }
+    return *this;
+}
+
+EventGenerator::EventGenerator(const EventGenerator &other) {
+    this->generator = other.generator;
+    this->pl = other.pl;
+    this->fl = other.fl;
+}
+
+void EventGenerator::swap(EventGenerator& other) {
+    std::swap(this->pl, other.pl);
+    std::swap(this->fl, other.fl);
+    std::swap(this->generator, other.generator);
+}
+
+EventGenerator::EventGenerator(Player *player, Field *field) : generator(), pl(player), fl(field){
+
 }

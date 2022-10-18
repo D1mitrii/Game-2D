@@ -19,7 +19,7 @@ CellView::CellView(Cell& cell) {
     else if(dynamic_cast<HealEvent*>(cell.get_event()) != nullptr) {
         cell_view = 'H';
     }
-    else if(dynamic_cast<FieldRegen*>(cell.get_event()) != nullptr) {
+    else if(dynamic_cast<FieldNoWalls*>(cell.get_event()) != nullptr) {
         cell_view = 'N';
     }
     else if(dynamic_cast<FieldChangePos*>(cell.get_event()) != nullptr) {

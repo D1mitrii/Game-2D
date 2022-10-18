@@ -4,9 +4,7 @@ void Game::start() {
     status = START;
     mediator->notify(this, IMediator::GAME_STATUS);
     status = INPROGRESS;
-    auto* event_gen = new EventGenerator(player, field);
-    field->set_factory(event_gen);
-    field->generate_field();
+    field_generate();
     loop();
 }
 
@@ -43,6 +41,13 @@ Game::STATUS Game::get_status() const {
 
 void Game::set_status(STATUS stat) {
     status = stat;
+}
+
+void Game::field_generate() {
+    EventGenerator gen(player, field);
+    CellFactory factory(gen);
+    FieldGenerator fieldGenerator(factory);
+    fieldGenerator.field_generate(*field);
 }
 
 void Game::initialize_field() {

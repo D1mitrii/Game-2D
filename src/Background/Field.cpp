@@ -1,6 +1,6 @@
 #include "Field.h"
 
-Field::Field(int a, int b) : width(a), height(b), player_position({0,0}), factory(nullptr) {
+Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
 }
 
 void Field::swap(Field &other) {
@@ -9,7 +9,6 @@ void Field::swap(Field &other) {
     std::swap(field, other.field);
     std::swap(player_position, other.player_position);
     std::swap(observers, other.observers);
-    std::swap(factory, other.factory);
 }
 
 Field &Field::operator=(Field &&other) {
@@ -41,39 +40,8 @@ Field &Field::operator=(const Field &other) {
     return *this;
 }
 
-
-void Field::set_cell(int y) {
-    RNGenerator gen;
-    std::uniform_int_distribution<int> dist {0, 10};
-    int num = gen.get_random_value<int>(dist);
-    if(num < 5){
-        field.at(y).push_back(cells["BASE"]());
-        return;
-    } else if(num < 7){
-        field.at(y).push_back(cells["WALL"]());
-        return;
-    } else{
-        field.at(y).push_back(cells["EVENT"]());
-        return;
-    }
-}
-
-void Field::set_factory(EventGenerator* ev_gen) {
-    delete factory;
-    factory = new CellFactory(ev_gen);
-    cells["BASE"] = std::function<Cell()>([this]() { return factory->base_cell();});
-    cells["WALL"] = std::function<Cell()>([this]() { return factory->wall_cell();});
-    cells["EVENT"] = std::function<Cell()> ([this]() { return factory->event_cell();});
-}
-
-void Field::generate_field() {
-    deconstruct();
-    for(int i = 0; i != height; i++){
-        field.emplace_back();
-        for (int j = 0; j != width; j++) {
-            set_cell(i);
-        }
-    }
+void Field::set_field(std::vector<std::vector<Cell>>& fl) {
+    field = fl;
     notify();
 }
 
@@ -107,6 +75,16 @@ void Field::change_player_position(Player::Directions direction) {
         field.at(player_position.second).at(player_position.first).get_event()->execute();
         field.at(player_position.second).at(player_position.first).set_event(nullptr);
     }
+}
+
+
+void Field::remove_walls() {
+    for (int i = 0; i != height; ++i) {
+        for (int j = 0; j != width; ++j) {
+            field.at(i).at(j).set_wall(false);
+        }
+    }
+    this->notify();
 }
 
 int Field::get_height() const {
@@ -143,7 +121,6 @@ void Field::deconstruct() {
 
 Field::~Field() {
     deconstruct();
-    delete factory;
 }
 
 std::pair<int, int> Field::get_position() const {

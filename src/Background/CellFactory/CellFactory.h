@@ -7,19 +7,17 @@
 
 class EventGenerator;
 
-#include "src/Background/Cell.h"
 #include "src/Events/EventGenerator/EventGenerator.h"
 
 class CellFactory {
 private:
-    EventGenerator* ev_gen;
+    EventGenerator ev_gen;
 public:
-    explicit CellFactory(EventGenerator* gen) : ev_gen(gen) {};
-    void set_generator(EventGenerator* gen);
+    CellFactory() = default;
+    explicit CellFactory(EventGenerator& gen);
     Cell wall_cell();
     Cell base_cell();
     Cell event_cell();
-    ~CellFactory();
 };
 
 

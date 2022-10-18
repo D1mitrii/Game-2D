@@ -8,6 +8,7 @@
 #include "FieldEvents.h"
 #include "src/Entities/Player.h"
 #include "src/Background/Field.h"
+#include "src/Utils/RNG/RNGenerator.h"
 
 class FieldChangePos : public FieldEvents{
 public:

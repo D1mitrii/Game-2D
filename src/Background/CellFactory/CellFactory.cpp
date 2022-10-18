@@ -1,12 +1,8 @@
-//
-// Created by Dmitriy on 10/17/2022.
-//
-
 #include "CellFactory.h"
 
 
-void CellFactory::set_generator(EventGenerator* gen) {
-    ev_gen = gen;
+CellFactory::CellFactory(EventGenerator &gen) {
+    this->ev_gen = gen;
 }
 
 Cell CellFactory::wall_cell() {
@@ -18,9 +14,5 @@ Cell CellFactory::base_cell() {
 }
 
 Cell CellFactory::event_cell() {
-    return Cell(false, ev_gen->generate());
-}
-
-CellFactory::~CellFactory() {
-    delete ev_gen;
+    return Cell(false, ev_gen.generate());
 }

@@ -11,8 +11,6 @@ class RNGenerator {
 public:
     RNGenerator();
     RNGenerator(int64_t s);
-    RNGenerator(const RNGenerator& rng) = delete;
-    RNGenerator& operator=(const RNGenerator& rng) = delete;
     int64_t get_seed() const;
 
     template<typename R, typename I>

@@ -2,9 +2,11 @@
 #define OOP_GAME_H
 
 class MediatorObject;
+class Field;
 
-#include "src/Entities/Player.h"
 #include "src/Views/FieldView.h"
+#include "src/Background/FieldGenerator/FieldGenerator.h"
+#include "src/Entities/Player.h"
 #include "src/Entities/Player.h"
 #include "src/Views/PlayerView.h"
 #include "src/Utils/Med/MediatorObject.h"
@@ -36,6 +38,7 @@ private:
     void loop();
     void reaction();
     void is_end();
+    void field_generate();
     STATUS status;
 };
 

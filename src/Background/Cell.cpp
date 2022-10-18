@@ -20,6 +20,14 @@ Cell::Cell(Cell&& other) {
     this->swap(other);
 }
 
+
+Cell &Cell::operator=(const Cell& other) {
+    if(this != &other){
+        Cell(other).swap(*this);
+    }
+    return *this;
+}
+
 void Cell::set_event(Event *ev) {
     delete event;
     event = ev;

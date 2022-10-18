@@ -308,20 +308,20 @@ CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\PlayerEvents\Buff.cpp -o CMakeFiles\OOP.dir\src\Events\PlayerEvents\Buff.cpp.s
 
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/flags.make
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: ../src/Events/FieldEvents/FieldRegen.cpp
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.obj -c D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldRegen.cpp
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj: ../src/Events/FieldEvents/FieldNoWalls.cpp
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj -MF CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldNoWalls.cpp.obj.d -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldNoWalls.cpp.obj -c D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldNoWalls.cpp
 
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.i"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldRegen.cpp > CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.i
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldNoWalls.cpp > CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldNoWalls.cpp.i
 
-CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.s"
-	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldRegen.cpp -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldRegen.cpp.s
+CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\FieldEvents\FieldNoWalls.cpp -o CMakeFiles\OOP.dir\src\Events\FieldEvents\FieldNoWalls.cpp.s
 
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: CMakeFiles/OOP.dir/flags.make
 CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
@@ -413,6 +413,21 @@ CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Events\EventGenerator\EventGenerator.cpp -o CMakeFiles\OOP.dir\src\Events\EventGenerator\EventGenerator.cpp.s
 
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj: ../src/Background/FieldGenerator/FieldGenerator.cpp
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj -MF CMakeFiles\OOP.dir\src\Background\FieldGenerator\FieldGenerator.cpp.obj.d -o CMakeFiles\OOP.dir\src\Background\FieldGenerator\FieldGenerator.cpp.obj -c D:\Programming\REPO\OOP\src\Background\FieldGenerator\FieldGenerator.cpp
+
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Background\FieldGenerator\FieldGenerator.cpp > CMakeFiles\OOP.dir\src\Background\FieldGenerator\FieldGenerator.cpp.i
+
+CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Background\FieldGenerator\FieldGenerator.cpp -o CMakeFiles\OOP.dir\src\Background\FieldGenerator\FieldGenerator.cpp.s
+
 # Object files for target OOP
 OOP_OBJECTS = \
 "CMakeFiles/OOP.dir/main.cpp.obj" \
@@ -431,13 +446,14 @@ OOP_OBJECTS = \
 "CMakeFiles/OOP.dir/src/Utils/RNG/RNGenerator.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj"
+"CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj"
 
 # External object files for target OOP
 OOP_EXTERNAL_OBJECTS =
@@ -458,18 +474,19 @@ OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/CoinEvent.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/RNG/RNGenerator.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldChangePos.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/Buff.cpp.obj
-OOP.exe: CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldRegen.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/PlayerEvents/HealEvent.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/Med/MediatorObject.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Utils/Med/Mediator.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Background/Cell.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/build.make
 OOP.exe: CMakeFiles/OOP.dir/linklibs.rsp
 OOP.exe: CMakeFiles/OOP.dir/objects1.rsp
 OOP.exe: CMakeFiles/OOP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable OOP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable OOP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OOP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
