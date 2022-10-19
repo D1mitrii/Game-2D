@@ -24,7 +24,6 @@ public:
     Player::Directions get_step() const;
     void Defeat() const;
     void Victory() const;
-    ~IOCommander() override = default;
 };
 
 

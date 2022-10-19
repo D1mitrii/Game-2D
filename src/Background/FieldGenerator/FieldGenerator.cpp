@@ -1,7 +1,3 @@
-//
-// Created by Dmitriy on 10/18/2022.
-//
-
 #include "FieldGenerator.h"
 
 FieldGenerator::FieldGenerator(CellFactory& fact) {
@@ -31,7 +27,7 @@ void FieldGenerator::set_cell(int x, int y) {
     if(num < 5){
         fl.at(y).push_back(cells["BASE"]());
         return;
-    } else if(num < 7){
+    } else if(num < 8){
         fl.at(y).push_back(cells["WALL"]());
         return;
     } else{

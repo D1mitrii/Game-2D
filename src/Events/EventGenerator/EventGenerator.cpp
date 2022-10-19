@@ -15,13 +15,13 @@ Event* EventGenerator::generate() {
     }
     else if(num < 40){
         return new FrozenTrap(pl);
-    } else if(num < 70){
+    } else if(num < 75){
         return new CoinEvent(pl, generator.get_random_value<int>(coins));
     } else if(num < 80){
         return new Buff(pl, generator.get_random_value<int>(buf));
     } else if(num < 89){
         return new FieldNoWalls(fl);
-    } else if(num < 90){
+    } else if(num < 95){
         return new FieldChangePos(fl);
     }
     else{

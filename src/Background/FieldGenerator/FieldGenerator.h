@@ -1,7 +1,3 @@
-//
-// Created by Dmitriy on 10/18/2022.
-//
-
 #ifndef OOP_FIELDGENERATOR_H
 #define OOP_FIELDGENERATOR_H
 
@@ -12,7 +8,7 @@ class CellFactory;
 class FieldGenerator {
 private:
     CellFactory factory;
-    std::map<std::string, std::function<Cell()> > cells;
+    std::map<std::string, std::function<Cell()>> cells;
     std::vector<std::vector<Cell>> fl;
     void set_cell(int x, int y);
 public:

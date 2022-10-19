@@ -41,6 +41,7 @@ Field &Field::operator=(const Field &other) {
 }
 
 void Field::set_field(std::vector<std::vector<Cell>>& fl) {
+    deconstruct();
     field = fl;
     notify();
 }
