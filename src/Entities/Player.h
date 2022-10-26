@@ -2,6 +2,7 @@
 #define OOP_PLAYER_H
 
 #include "src/Utils/Obs/ISubject.h"
+#include "src/Logs/Messages/MessageFactory.h"
 #include <vector>
 #include <algorithm>
 #include <cstdio>

@@ -10,6 +10,7 @@ class Cell;
 #include <map>
 #include <vector>
 #include <utility>
+#include "src/Logs/LogPool/LogPool.h"
 
 class Field : public ISubject{
 private:

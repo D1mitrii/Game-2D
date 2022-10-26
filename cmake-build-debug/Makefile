@@ -488,6 +488,150 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Logs/LogPool/LogPool.obj: src/Logs/LogPool/LogPool.cpp.obj
+.PHONY : src/Logs/LogPool/LogPool.obj
+
+# target to build an object file
+src/Logs/LogPool/LogPool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/LogPool/LogPool.cpp.obj
+.PHONY : src/Logs/LogPool/LogPool.cpp.obj
+
+src/Logs/LogPool/LogPool.i: src/Logs/LogPool/LogPool.cpp.i
+.PHONY : src/Logs/LogPool/LogPool.i
+
+# target to preprocess a source file
+src/Logs/LogPool/LogPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/LogPool/LogPool.cpp.i
+.PHONY : src/Logs/LogPool/LogPool.cpp.i
+
+src/Logs/LogPool/LogPool.s: src/Logs/LogPool/LogPool.cpp.s
+.PHONY : src/Logs/LogPool/LogPool.s
+
+# target to generate assembly for a file
+src/Logs/LogPool/LogPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/LogPool/LogPool.cpp.s
+.PHONY : src/Logs/LogPool/LogPool.cpp.s
+
+src/Logs/Logger/ConsoleLog.obj: src/Logs/Logger/ConsoleLog.cpp.obj
+.PHONY : src/Logs/Logger/ConsoleLog.obj
+
+# target to build an object file
+src/Logs/Logger/ConsoleLog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/ConsoleLog.cpp.obj
+.PHONY : src/Logs/Logger/ConsoleLog.cpp.obj
+
+src/Logs/Logger/ConsoleLog.i: src/Logs/Logger/ConsoleLog.cpp.i
+.PHONY : src/Logs/Logger/ConsoleLog.i
+
+# target to preprocess a source file
+src/Logs/Logger/ConsoleLog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/ConsoleLog.cpp.i
+.PHONY : src/Logs/Logger/ConsoleLog.cpp.i
+
+src/Logs/Logger/ConsoleLog.s: src/Logs/Logger/ConsoleLog.cpp.s
+.PHONY : src/Logs/Logger/ConsoleLog.s
+
+# target to generate assembly for a file
+src/Logs/Logger/ConsoleLog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/ConsoleLog.cpp.s
+.PHONY : src/Logs/Logger/ConsoleLog.cpp.s
+
+src/Logs/Logger/FileLog.obj: src/Logs/Logger/FileLog.cpp.obj
+.PHONY : src/Logs/Logger/FileLog.obj
+
+# target to build an object file
+src/Logs/Logger/FileLog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/FileLog.cpp.obj
+.PHONY : src/Logs/Logger/FileLog.cpp.obj
+
+src/Logs/Logger/FileLog.i: src/Logs/Logger/FileLog.cpp.i
+.PHONY : src/Logs/Logger/FileLog.i
+
+# target to preprocess a source file
+src/Logs/Logger/FileLog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/FileLog.cpp.i
+.PHONY : src/Logs/Logger/FileLog.cpp.i
+
+src/Logs/Logger/FileLog.s: src/Logs/Logger/FileLog.cpp.s
+.PHONY : src/Logs/Logger/FileLog.s
+
+# target to generate assembly for a file
+src/Logs/Logger/FileLog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Logger/FileLog.cpp.s
+.PHONY : src/Logs/Logger/FileLog.cpp.s
+
+src/Logs/Messages/Message.obj: src/Logs/Messages/Message.cpp.obj
+.PHONY : src/Logs/Messages/Message.obj
+
+# target to build an object file
+src/Logs/Messages/Message.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/Message.cpp.obj
+.PHONY : src/Logs/Messages/Message.cpp.obj
+
+src/Logs/Messages/Message.i: src/Logs/Messages/Message.cpp.i
+.PHONY : src/Logs/Messages/Message.i
+
+# target to preprocess a source file
+src/Logs/Messages/Message.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/Message.cpp.i
+.PHONY : src/Logs/Messages/Message.cpp.i
+
+src/Logs/Messages/Message.s: src/Logs/Messages/Message.cpp.s
+.PHONY : src/Logs/Messages/Message.s
+
+# target to generate assembly for a file
+src/Logs/Messages/Message.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/Message.cpp.s
+.PHONY : src/Logs/Messages/Message.cpp.s
+
+src/Logs/Messages/MessageFactory.obj: src/Logs/Messages/MessageFactory.cpp.obj
+.PHONY : src/Logs/Messages/MessageFactory.obj
+
+# target to build an object file
+src/Logs/Messages/MessageFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactory.cpp.obj
+.PHONY : src/Logs/Messages/MessageFactory.cpp.obj
+
+src/Logs/Messages/MessageFactory.i: src/Logs/Messages/MessageFactory.cpp.i
+.PHONY : src/Logs/Messages/MessageFactory.i
+
+# target to preprocess a source file
+src/Logs/Messages/MessageFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactory.cpp.i
+.PHONY : src/Logs/Messages/MessageFactory.cpp.i
+
+src/Logs/Messages/MessageFactory.s: src/Logs/Messages/MessageFactory.cpp.s
+.PHONY : src/Logs/Messages/MessageFactory.s
+
+# target to generate assembly for a file
+src/Logs/Messages/MessageFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactory.cpp.s
+.PHONY : src/Logs/Messages/MessageFactory.cpp.s
+
+src/Logs/Messages/MessageFactoryDestroyer.obj: src/Logs/Messages/MessageFactoryDestroyer.cpp.obj
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.obj
+
+# target to build an object file
+src/Logs/Messages/MessageFactoryDestroyer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.obj
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.cpp.obj
+
+src/Logs/Messages/MessageFactoryDestroyer.i: src/Logs/Messages/MessageFactoryDestroyer.cpp.i
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.i
+
+# target to preprocess a source file
+src/Logs/Messages/MessageFactoryDestroyer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.i
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.cpp.i
+
+src/Logs/Messages/MessageFactoryDestroyer.s: src/Logs/Messages/MessageFactoryDestroyer.cpp.s
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.s
+
+# target to generate assembly for a file
+src/Logs/Messages/MessageFactoryDestroyer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.s
+.PHONY : src/Logs/Messages/MessageFactoryDestroyer.cpp.s
+
 src/Utils/IOCommander.obj: src/Utils/IOCommander.cpp.obj
 .PHONY : src/Utils/IOCommander.obj
 
@@ -758,6 +902,24 @@ help:
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Logs/LogPool/LogPool.obj
+	@echo ... src/Logs/LogPool/LogPool.i
+	@echo ... src/Logs/LogPool/LogPool.s
+	@echo ... src/Logs/Logger/ConsoleLog.obj
+	@echo ... src/Logs/Logger/ConsoleLog.i
+	@echo ... src/Logs/Logger/ConsoleLog.s
+	@echo ... src/Logs/Logger/FileLog.obj
+	@echo ... src/Logs/Logger/FileLog.i
+	@echo ... src/Logs/Logger/FileLog.s
+	@echo ... src/Logs/Messages/Message.obj
+	@echo ... src/Logs/Messages/Message.i
+	@echo ... src/Logs/Messages/Message.s
+	@echo ... src/Logs/Messages/MessageFactory.obj
+	@echo ... src/Logs/Messages/MessageFactory.i
+	@echo ... src/Logs/Messages/MessageFactory.s
+	@echo ... src/Logs/Messages/MessageFactoryDestroyer.obj
+	@echo ... src/Logs/Messages/MessageFactoryDestroyer.i
+	@echo ... src/Logs/Messages/MessageFactoryDestroyer.s
 	@echo ... src/Utils/IOCommander.obj
 	@echo ... src/Utils/IOCommander.i
 	@echo ... src/Utils/IOCommander.s

@@ -70,9 +70,9 @@ void Field::change_player_position(Player::Directions direction) {
     if(temp.second < 0) temp.second += height;
 
     check_position(temp);
-
     notify();
     if(field.at(player_position.second).at(player_position.first).get_event() != nullptr){
+        MessageFactory::get_instance().create_message(GameObjects, "Event started!");
         field.at(player_position.second).at(player_position.first).get_event()->execute();
         field.at(player_position.second).at(player_position.first).set_event(nullptr);
     }
@@ -86,6 +86,7 @@ void Field::remove_walls() {
         }
     }
     this->notify();
+    MessageFactory::get_instance().create_message(GameObjects, "Walls have been removed from the playing field.");
 }
 
 int Field::get_height() const {
@@ -102,6 +103,7 @@ Cell& Field::get_cell(int x, int y){
 
 void Field::check_position(std::pair<int, int> pair) {
     if(field.at(pair.second).at(pair.first).is_wall()){
+        MessageFactory::get_instance().create_message(Errors, "The player tried to step on the wall.");
         return;
     }
     this->player_position = pair;

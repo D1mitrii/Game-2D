@@ -1,6 +1,6 @@
 #include "Mediator.h"
 
-Mediator::Mediator(Game *pGame, IOCommander *pCommander)  : game(pGame), commander(pCommander) {
+Mediator::Mediator(Game *pGame, IOCommander *pCommander)  : game(pGame), commander(pCommander), log(nullptr) {
     game->set_mediator(this);
     commander->set_mediator(this);
 }
@@ -18,6 +18,7 @@ void Mediator::game_handler(IMediator::MEVENTS cmd) {
     switch (cmd) {
         case IMediator::GAME_STATUS:{
             if(game->get_status() == Game::START){
+                commander->create_logger();
                 commander->map_standard();
                 return;
             }
@@ -60,7 +61,17 @@ void Mediator::commander_handler(IMediator::MEVENTS cmd) {
     }
 }
 
+void Mediator::set_log(LogPool * logger) {
+    log = logger;
+}
+
 Mediator::~Mediator() {
     delete game;
     delete commander;
+    delete log;
 }
+
+void Mediator::print() {
+    printf("%p", log);
+}
+

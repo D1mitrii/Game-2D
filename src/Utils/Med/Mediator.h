@@ -17,11 +17,14 @@ class Mediator : public IMediator {
 private:
     Game* game;
     IOCommander* commander;
+    LogPool* log;
     void game_handler(IMediator::MEVENTS cmd);
     void commander_handler(IMediator::MEVENTS cmd);
 public:
     Mediator(Game *pGame, IOCommander *pCommander);
+    void set_log(LogPool*);
     void notify(MediatorObject *who, IMediator::MEVENTS event) final;
+    void print();
     ~Mediator() override;
 };
 

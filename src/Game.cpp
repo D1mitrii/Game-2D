@@ -4,6 +4,7 @@ void Game::start() {
     status = START;
     mediator->notify(this, IMediator::GAME_STATUS);
     status = INPROGRESS;
+    MessageFactory::get_instance().create_message(Gamestatus, "Game is ON.");
     field_generate();
     loop();
 }
@@ -16,6 +17,7 @@ Game::Game(){
 void Game::reaction() {
     if(cur_step == Player::EXIT){
         status = END;
+        MessageFactory::get_instance().create_message(Gamestatus, "The player has closed the game.");
         return;
     }
     field->change_player_position(cur_step);
@@ -48,6 +50,7 @@ void Game::field_generate() {
     CellFactory factory(gen);
     FieldGenerator fieldGenerator(factory);
     fieldGenerator.field_generate(*field);
+    MessageFactory::get_instance().create_message(GameObjects, "The playing field is generated.");
 }
 
 void Game::initialize_field() {
@@ -69,6 +72,7 @@ void Game::loop() {
         mediator->notify(this, IMediator::STEP);
         reaction();
     }
+    MessageFactory::get_instance().create_message(Gamestatus, "Game over.");
 }
 
 Game::~Game() {

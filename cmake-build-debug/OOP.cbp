@@ -180,6 +180,48 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Game.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Levels.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/LogPool/LogPool.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/LogPool/LogPool.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Logger/ConsoleLog.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Logger/ConsoleLog.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Logger/FileLog.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Logger/FileLog.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Logger/ILogger.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/Message.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/Message.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/MessageFactory.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/MessageFactory.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/MessageFactoryDestroyer.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Messages/MessageFactoryDestroyer.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Utils/IOCommander.cpp">
 			<Option target="OOP"/>
 		</Unit>
