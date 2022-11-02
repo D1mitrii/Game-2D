@@ -248,6 +248,126 @@ src/Background/FieldGenerator/FieldGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.s
 .PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.s
 
+src/Control/ConfigReader/ConfigReader.obj: src/Control/ConfigReader/ConfigReader.cpp.obj
+.PHONY : src/Control/ConfigReader/ConfigReader.obj
+
+# target to build an object file
+src/Control/ConfigReader/ConfigReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj
+.PHONY : src/Control/ConfigReader/ConfigReader.cpp.obj
+
+src/Control/ConfigReader/ConfigReader.i: src/Control/ConfigReader/ConfigReader.cpp.i
+.PHONY : src/Control/ConfigReader/ConfigReader.i
+
+# target to preprocess a source file
+src/Control/ConfigReader/ConfigReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.i
+.PHONY : src/Control/ConfigReader/ConfigReader.cpp.i
+
+src/Control/ConfigReader/ConfigReader.s: src/Control/ConfigReader/ConfigReader.cpp.s
+.PHONY : src/Control/ConfigReader/ConfigReader.s
+
+# target to generate assembly for a file
+src/Control/ConfigReader/ConfigReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.s
+.PHONY : src/Control/ConfigReader/ConfigReader.cpp.s
+
+src/Control/Configs/FileConfig.obj: src/Control/Configs/FileConfig.cpp.obj
+.PHONY : src/Control/Configs/FileConfig.obj
+
+# target to build an object file
+src/Control/Configs/FileConfig.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj
+.PHONY : src/Control/Configs/FileConfig.cpp.obj
+
+src/Control/Configs/FileConfig.i: src/Control/Configs/FileConfig.cpp.i
+.PHONY : src/Control/Configs/FileConfig.i
+
+# target to preprocess a source file
+src/Control/Configs/FileConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.i
+.PHONY : src/Control/Configs/FileConfig.cpp.i
+
+src/Control/Configs/FileConfig.s: src/Control/Configs/FileConfig.cpp.s
+.PHONY : src/Control/Configs/FileConfig.s
+
+# target to generate assembly for a file
+src/Control/Configs/FileConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.s
+.PHONY : src/Control/Configs/FileConfig.cpp.s
+
+src/Control/Configs/IConfig.obj: src/Control/Configs/IConfig.cpp.obj
+.PHONY : src/Control/Configs/IConfig.obj
+
+# target to build an object file
+src/Control/Configs/IConfig.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj
+.PHONY : src/Control/Configs/IConfig.cpp.obj
+
+src/Control/Configs/IConfig.i: src/Control/Configs/IConfig.cpp.i
+.PHONY : src/Control/Configs/IConfig.i
+
+# target to preprocess a source file
+src/Control/Configs/IConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.i
+.PHONY : src/Control/Configs/IConfig.cpp.i
+
+src/Control/Configs/IConfig.s: src/Control/Configs/IConfig.cpp.s
+.PHONY : src/Control/Configs/IConfig.s
+
+# target to generate assembly for a file
+src/Control/Configs/IConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.s
+.PHONY : src/Control/Configs/IConfig.cpp.s
+
+src/Control/ControlBridge.obj: src/Control/ControlBridge.cpp.obj
+.PHONY : src/Control/ControlBridge.obj
+
+# target to build an object file
+src/Control/ControlBridge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj
+.PHONY : src/Control/ControlBridge.cpp.obj
+
+src/Control/ControlBridge.i: src/Control/ControlBridge.cpp.i
+.PHONY : src/Control/ControlBridge.i
+
+# target to preprocess a source file
+src/Control/ControlBridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.i
+.PHONY : src/Control/ControlBridge.cpp.i
+
+src/Control/ControlBridge.s: src/Control/ControlBridge.cpp.s
+.PHONY : src/Control/ControlBridge.s
+
+# target to generate assembly for a file
+src/Control/ControlBridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.s
+.PHONY : src/Control/ControlBridge.cpp.s
+
+src/Control/Controlers/ConsoleControler.obj: src/Control/Controlers/ConsoleControler.cpp.obj
+.PHONY : src/Control/Controlers/ConsoleControler.obj
+
+# target to build an object file
+src/Control/Controlers/ConsoleControler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj
+.PHONY : src/Control/Controlers/ConsoleControler.cpp.obj
+
+src/Control/Controlers/ConsoleControler.i: src/Control/Controlers/ConsoleControler.cpp.i
+.PHONY : src/Control/Controlers/ConsoleControler.i
+
+# target to preprocess a source file
+src/Control/Controlers/ConsoleControler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.i
+.PHONY : src/Control/Controlers/ConsoleControler.cpp.i
+
+src/Control/Controlers/ConsoleControler.s: src/Control/Controlers/ConsoleControler.cpp.s
+.PHONY : src/Control/Controlers/ConsoleControler.s
+
+# target to generate assembly for a file
+src/Control/Controlers/ConsoleControler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.s
+.PHONY : src/Control/Controlers/ConsoleControler.cpp.s
+
 src/Entities/Player.obj: src/Entities/Player.cpp.obj
 .PHONY : src/Entities/Player.obj
 
@@ -872,6 +992,21 @@ help:
 	@echo ... src/Background/FieldGenerator/FieldGenerator.obj
 	@echo ... src/Background/FieldGenerator/FieldGenerator.i
 	@echo ... src/Background/FieldGenerator/FieldGenerator.s
+	@echo ... src/Control/ConfigReader/ConfigReader.obj
+	@echo ... src/Control/ConfigReader/ConfigReader.i
+	@echo ... src/Control/ConfigReader/ConfigReader.s
+	@echo ... src/Control/Configs/FileConfig.obj
+	@echo ... src/Control/Configs/FileConfig.i
+	@echo ... src/Control/Configs/FileConfig.s
+	@echo ... src/Control/Configs/IConfig.obj
+	@echo ... src/Control/Configs/IConfig.i
+	@echo ... src/Control/Configs/IConfig.s
+	@echo ... src/Control/ControlBridge.obj
+	@echo ... src/Control/ControlBridge.i
+	@echo ... src/Control/ControlBridge.s
+	@echo ... src/Control/Controlers/ConsoleControler.obj
+	@echo ... src/Control/Controlers/ConsoleControler.i
+	@echo ... src/Control/Controlers/ConsoleControler.s
 	@echo ... src/Entities/Player.obj
 	@echo ... src/Entities/Player.i
 	@echo ... src/Entities/Player.s

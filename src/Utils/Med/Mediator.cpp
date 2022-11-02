@@ -1,6 +1,7 @@
 #include "Mediator.h"
 
-Mediator::Mediator(Game *pGame, IOCommander *pCommander)  : game(pGame), commander(pCommander), log(nullptr) {
+Mediator::Mediator(Game *pGame, IOCommander *pCommander)  : game(pGame), commander(pCommander), log(nullptr), control(
+        nullptr) {
     game->set_mediator(this);
     commander->set_mediator(this);
 }
@@ -8,18 +9,20 @@ Mediator::Mediator(Game *pGame, IOCommander *pCommander)  : game(pGame), command
 void Mediator::notify(MediatorObject* who, IMediator::MEVENTS event) {
     if(auto temp = dynamic_cast<Game*>(who)){
         game_handler(event);
+        return;
     }
     if(auto temp = dynamic_cast<IOCommander*>(who)){
         commander_handler(event);
+        return;
     }
+    game->set_step(control->get_step());
 }
 
 void Mediator::game_handler(IMediator::MEVENTS cmd) {
     switch (cmd) {
         case IMediator::GAME_STATUS:{
             if(game->get_status() == Game::START){
-                commander->create_logger();
-                commander->map_standard();
+                g_start();
                 return;
             }
             if(game->get_status() == Game::INPROGRESS)
@@ -34,12 +37,20 @@ void Mediator::game_handler(IMediator::MEVENTS cmd) {
             break;
         }
         case IMediator::STEP:{
-            commander->input_step();
-            break;
+            control->next_step();
+            return;
         }
         default:
             break;
     }
+}
+
+void Mediator::g_start() {
+    commander->create_logger();
+    ConfigReader rcfg;
+    control = new ControlBridge(rcfg.read_cfg(), new ConsoleControler());
+    control->set_mediator(this);
+    commander->map_standard();
 }
 
 void Mediator::commander_handler(IMediator::MEVENTS cmd) {
@@ -53,7 +64,7 @@ void Mediator::commander_handler(IMediator::MEVENTS cmd) {
             break;
         }
         case IMediator::STEP:{
-            game->set_step(commander->get_step());
+            game->set_step(control->get_step());
             break;
         }
         default:
@@ -69,9 +80,6 @@ Mediator::~Mediator() {
     delete game;
     delete commander;
     delete log;
-}
-
-void Mediator::print() {
-    printf("%p", log);
+    delete control;
 }
 

@@ -13,7 +13,7 @@ class MediatorObject {
 public:
     MediatorObject(IMediator *med = nullptr);
     void set_mediator(IMediator* med);
-    virtual ~MediatorObject() {};
+    virtual ~MediatorObject() = default;
 protected:
     IMediator* mediator;
 };

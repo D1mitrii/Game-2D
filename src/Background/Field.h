@@ -29,7 +29,7 @@ public:
     Field& operator=(const Field& other);
     Field& operator=(Field&& other);
     void set_field(std::vector<std::vector<Cell>>& fl);
-    void change_player_position(Player::Directions direction);
+    void change_player_position(Player::Moves direction);
     int get_height() const;
     int get_width() const;
     Cell& get_cell(int x, int y);

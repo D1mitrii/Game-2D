@@ -15,13 +15,14 @@ private:
     int coins;
     std::vector<IObserver*> observers;
 public:
-    enum Directions{
-        UP = 1,
-        DOWN = 2,
-        LEFT = 3,
-        RIGHT = 4,
-        EXIT = 5,
-        NOTHING = 6
+    enum Moves{
+        UP,
+        DOWN,
+        LEFT,
+        RIGHT,
+        EXIT,
+        MENU,
+        NOTHING
     };
     explicit Player(int hearts = 3, int power = 3);
     ~Player() = default;

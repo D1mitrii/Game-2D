@@ -46,7 +46,7 @@ void Field::set_field(std::vector<std::vector<Cell>>& fl) {
     notify();
 }
 
-void Field::change_player_position(Player::Directions direction) {
+void Field::change_player_position(Player::Moves direction) {
 
     std::pair<int, int> temp = player_position;
 

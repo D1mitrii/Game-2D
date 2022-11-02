@@ -15,18 +15,21 @@ int IOCommander::read_number() const {
     return number;
 }
 
-void IOCommander::read_levels(std::vector<Levels>& list) {
-    std::cout << "Logging the level of the Game Object?\n";
-    if(get_approve())
-        list.push_back(GameObjects);
-
+std::vector<Levels> IOCommander::read_levels() {
+    std::vector<Levels> list = {GameObjects, Gamestatus, Errors};
     std::cout << "Logging the level of the Game Status?\n";
     if(get_approve())
-        list.push_back(Gamestatus);
-
+        return list;
+    std::remove(list.begin(), list.end(), Gamestatus);
+    std::cout << "Logging the level of the Game Objects?\n";
+    if(get_approve())
+        return list;
+    std::remove(list.begin(), list.end(), GameObjects);
     std::cout << "Logging the level of the Errors?\n";
     if(get_approve())
-        list.push_back(Errors);
+        return list;
+    std::remove(list.begin(), list.end(), Errors);
+    return list;
 }
 
 bool IOCommander::get_approve() const {
@@ -43,33 +46,6 @@ void IOCommander::map_standard() const {
     }
     else
         mediator->notify((MediatorObject *) this, IMediator::MEVENTS::CANCEL);
-}
-
-void IOCommander::input_step(){
-    std::cout << "The direction of the player's movement (w, a, s, d). To exit, write e:";
-    char ch;
-    std::cin >> ch;
-    switch (ch) {
-        case 'w':
-            step = Player::UP;
-            break;
-        case 's':
-            step = Player::DOWN;
-            break;
-        case 'a':
-            step = Player::LEFT;
-            break;
-        case 'd':
-            step = Player::RIGHT;
-            break;
-        case 'e':
-            step = Player::EXIT;
-            break;
-        default:
-            step = Player::NOTHING;
-            break;
-    }
-    mediator->notify(this, IMediator::STEP);
 }
 
 void IOCommander::Defeat() const {
@@ -104,8 +80,7 @@ void IOCommander::create_logger() {
     }
 
     std::vector<Levels> list_levels;
-    read_levels(list_levels);
-    log->set_log_levels(list_levels);
+    log->set_log_levels(read_levels());
     mediator->set_log(log);
 }
 
@@ -119,8 +94,4 @@ std::pair<int, int> IOCommander::read_size() {
     std::cout << "Height:";
     height = read_number();
     return std::pair<int, int>{width, height};
-}
-
-Player::Directions IOCommander::get_step() const {
-    return step;
 }

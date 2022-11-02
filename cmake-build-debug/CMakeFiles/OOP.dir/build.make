@@ -518,6 +518,81 @@ CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.s"
 	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Logs\Messages\MessageFactoryDestroyer.cpp -o CMakeFiles\OOP.dir\src\Logs\Messages\MessageFactoryDestroyer.cpp.s
 
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj: ../src/Control/Configs/IConfig.cpp
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj -MF CMakeFiles\OOP.dir\src\Control\Configs\IConfig.cpp.obj.d -o CMakeFiles\OOP.dir\src\Control\Configs\IConfig.cpp.obj -c D:\Programming\REPO\OOP\src\Control\Configs\IConfig.cpp
+
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Control\Configs\IConfig.cpp > CMakeFiles\OOP.dir\src\Control\Configs\IConfig.cpp.i
+
+CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Control\Configs\IConfig.cpp -o CMakeFiles\OOP.dir\src\Control\Configs\IConfig.cpp.s
+
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj: ../src/Control/Configs/FileConfig.cpp
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj -MF CMakeFiles\OOP.dir\src\Control\Configs\FileConfig.cpp.obj.d -o CMakeFiles\OOP.dir\src\Control\Configs\FileConfig.cpp.obj -c D:\Programming\REPO\OOP\src\Control\Configs\FileConfig.cpp
+
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Control\Configs\FileConfig.cpp > CMakeFiles\OOP.dir\src\Control\Configs\FileConfig.cpp.i
+
+CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Control\Configs\FileConfig.cpp -o CMakeFiles\OOP.dir\src\Control\Configs\FileConfig.cpp.s
+
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj: ../src/Control/ConfigReader/ConfigReader.cpp
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj -MF CMakeFiles\OOP.dir\src\Control\ConfigReader\ConfigReader.cpp.obj.d -o CMakeFiles\OOP.dir\src\Control\ConfigReader\ConfigReader.cpp.obj -c D:\Programming\REPO\OOP\src\Control\ConfigReader\ConfigReader.cpp
+
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Control\ConfigReader\ConfigReader.cpp > CMakeFiles\OOP.dir\src\Control\ConfigReader\ConfigReader.cpp.i
+
+CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Control\ConfigReader\ConfigReader.cpp -o CMakeFiles\OOP.dir\src\Control\ConfigReader\ConfigReader.cpp.s
+
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj: ../src/Control/ControlBridge.cpp
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj -MF CMakeFiles\OOP.dir\src\Control\ControlBridge.cpp.obj.d -o CMakeFiles\OOP.dir\src\Control\ControlBridge.cpp.obj -c D:\Programming\REPO\OOP\src\Control\ControlBridge.cpp
+
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Control\ControlBridge.cpp > CMakeFiles\OOP.dir\src\Control\ControlBridge.cpp.i
+
+CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Control\ControlBridge.cpp -o CMakeFiles\OOP.dir\src\Control\ControlBridge.cpp.s
+
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj: CMakeFiles/OOP.dir/flags.make
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj: CMakeFiles/OOP.dir/includes_CXX.rsp
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj: ../src/Control/Controlers/ConsoleControler.cpp
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj: CMakeFiles/OOP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj -MF CMakeFiles\OOP.dir\src\Control\Controlers\ConsoleControler.cpp.obj.d -o CMakeFiles\OOP.dir\src\Control\Controlers\ConsoleControler.cpp.obj -c D:\Programming\REPO\OOP\src\Control\Controlers\ConsoleControler.cpp
+
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.i"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\REPO\OOP\src\Control\Controlers\ConsoleControler.cpp > CMakeFiles\OOP.dir\src\Control\Controlers\ConsoleControler.cpp.i
+
+CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.s"
+	"D:\Programming\CLion 2022.2.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\REPO\OOP\src\Control\Controlers\ConsoleControler.cpp -o CMakeFiles\OOP.dir\src\Control\Controlers\ConsoleControler.cpp.s
+
 # Object files for target OOP
 OOP_OBJECTS = \
 "CMakeFiles/OOP.dir/main.cpp.obj" \
@@ -549,7 +624,12 @@ OOP_OBJECTS = \
 "CMakeFiles/OOP.dir/src/Logs/LogPool/LogPool.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Logs/Logger/FileLog.cpp.obj" \
 "CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactory.cpp.obj" \
-"CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.obj"
+"CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj" \
+"CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj"
 
 # External object files for target OOP
 OOP_EXTERNAL_OBJECTS =
@@ -584,11 +664,16 @@ OOP.exe: CMakeFiles/OOP.dir/src/Logs/LogPool/LogPool.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Logs/Logger/FileLog.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactory.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/src/Logs/Messages/MessageFactoryDestroyer.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Control/Configs/IConfig.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Control/Configs/FileConfig.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Control/ConfigReader/ConfigReader.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Control/ControlBridge.cpp.obj
+OOP.exe: CMakeFiles/OOP.dir/src/Control/Controlers/ConsoleControler.cpp.obj
 OOP.exe: CMakeFiles/OOP.dir/build.make
 OOP.exe: CMakeFiles/OOP.dir/linklibs.rsp
 OOP.exe: CMakeFiles/OOP.dir/objects1.rsp
 OOP.exe: CMakeFiles/OOP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable OOP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\REPO\OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable OOP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\OOP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

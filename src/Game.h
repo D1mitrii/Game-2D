@@ -27,14 +27,14 @@ public:
     void start();
     STATUS get_status() const;
     void set_status(STATUS stat);
-    void set_step(Player::Directions cur);
+    void set_step(Player::Moves cur);
     ~Game() override;
 private:
     Field* field;
     Player* player;
     FieldView* field_view;
     PlayerView* player_view;
-    Player::Directions cur_step;
+    Player::Moves cur_step;
     void loop();
     void reaction();
     void is_end();

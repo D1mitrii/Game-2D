@@ -12,7 +12,7 @@ FieldChangePos::FieldChangePos(Field *fl) {
 void FieldChangePos::execute() {
     RNGenerator generator;
     std::uniform_int_distribution<int> distr {1, 4};
-    Player::Directions dir;
+    Player::Moves dir;
     switch (generator.get_random_value<int>(distr)) {
         case 1:
             dir = Player::UP;

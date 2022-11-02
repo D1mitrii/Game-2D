@@ -1,0 +1,24 @@
+The game control config is set as follows:
+
+UP: "your character"
+DOWN: "your character"
+LEFT: "your character"
+RIGHT: "your character"
+EXIT: "your character"
+MENU: "your character"
+
+(Characters must be latin!)
+
+WARNING:
+If the config is set incorrectly (the file does not contain one of the prefixes,
+the same button is set for two or more prefixes, a mistake is made in the name of the prefix, etc.),
+then DEFAULT keys are set.
+
+DEFAULT CONTROLS LOOKS LIKE THIS:
+
+UP: w
+DOWN: s
+LEFT: a
+RIGHT: d
+EXIT: e
+MENU: m

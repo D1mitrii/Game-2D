@@ -15,8 +15,7 @@ class MediatorObject;
 
 class IOCommander : public MediatorObject{
 private:
-    Player::Directions step;
-    void read_levels(std::vector<Levels>&);
+    std::vector<Levels> read_levels();
 public:
     IOCommander() = default;
     void map_standard() const;
@@ -24,8 +23,6 @@ public:
     int read_number() const;
     bool get_approve() const;
     std::pair<int, int> read_size();
-    void input_step();
-    Player::Directions get_step() const;
     void Defeat() const;
     void Victory() const;
 };

@@ -63,7 +63,7 @@ void Game::initialize_field(std::pair<int, int> size) {
     field_view = new FieldView(field);
 }
 
-void Game::set_step(Player::Directions cur) {
+void Game::set_step(Player::Moves cur) {
     cur_step = cur;
 }
 

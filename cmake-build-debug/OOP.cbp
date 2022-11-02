@@ -111,6 +111,39 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/FieldGenerator/FieldGenerator.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/ConfigReader/ConfigReader.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/ConfigReader/ConfigReader.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Configs/FileConfig.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Configs/FileConfig.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Configs/IConfig.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Configs/IConfig.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/ControlBridge.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/ControlBridge.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Controlers/ConsoleControler.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Controlers/ConsoleControler.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Control/Controlers/IControler.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Entities/Player.cpp">
 			<Option target="OOP"/>
 		</Unit>
