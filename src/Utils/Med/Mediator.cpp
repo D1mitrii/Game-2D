@@ -15,7 +15,10 @@ void Mediator::notify(MediatorObject* who, IMediator::MEVENTS event) {
         commander_handler(event);
         return;
     }
-    game->set_step(control->get_step());
+    if(auto temp = dynamic_cast<IControler*>(who)){
+        game->set_step(control->get_step());
+        return;
+    }
 }
 
 void Mediator::game_handler(IMediator::MEVENTS cmd) {
@@ -47,9 +50,11 @@ void Mediator::game_handler(IMediator::MEVENTS cmd) {
 
 void Mediator::g_start() {
     commander->create_logger();
+
     ConfigReader rcfg;
     control = new ControlBridge(rcfg.read_cfg(), new ConsoleControler());
     control->set_mediator(this);
+
     commander->map_standard();
 }
 
