@@ -15,7 +15,7 @@ void Mediator::notify(MediatorObject* who, IMediator::MEVENTS event) {
         commander_handler(event);
         return;
     }
-    if(auto temp = dynamic_cast<IControler*>(who)){
+    if(auto temp = dynamic_cast<ControlBridge*>(who)){
         game->set_step(control->get_step());
         return;
     }
