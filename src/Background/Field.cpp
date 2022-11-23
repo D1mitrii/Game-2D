@@ -1,6 +1,13 @@
 #include "Field.h"
 
-Field::Field(int a, int b) : width(a), height(b), player_position({0,0}) {
+Field::Field(int a, int b) : width(a), height(b), player_position({0,0}), count_free_cells(width * height - 1), player(
+        nullptr) {
+    for (int i = 0; i < height; ++i) {
+        field.emplace_back();
+        for (int j = 0; j < width; ++j) {
+            field.at(i).emplace_back();
+        }
+    }
 }
 
 void Field::swap(Field &other) {
@@ -9,6 +16,7 @@ void Field::swap(Field &other) {
     std::swap(field, other.field);
     std::swap(player_position, other.player_position);
     std::swap(observers, other.observers);
+    std::swap(player, other.player);
 }
 
 Field &Field::operator=(Field &&other) {
@@ -18,7 +26,7 @@ Field &Field::operator=(Field &&other) {
     return *this;
 }
 
-Field::Field(const Field &other) : width(other.width), height(other.height), player_position(other.player_position) {
+Field::Field(const Field &other) : width(other.width), height(other.height), player_position(other.player_position), player(other.player) {
     for (int i = 0; i != height; i++)
     {
         this->field.emplace_back();
@@ -43,6 +51,9 @@ Field &Field::operator=(const Field &other) {
 void Field::set_field(std::vector<std::vector<Cell>>& fl) {
     deconstruct();
     field = fl;
+    height = (int) field.size();
+    width = (int) field.at(0).size();
+    count_frees();
     notify();
 }
 
@@ -130,6 +141,38 @@ std::pair<int, int> Field::get_position() const {
     return player_position;
 }
 
+void Field::set_player_pos(std::pair<int, int> &pos) {
+    player_position = std::move(pos);
+}
 
+int Field::get_count_free() const {
+    return count_free_cells;
+}
 
+void Field::set_count(int count){
+    count_free_cells = count;
+}
 
+void Field::set_player(Player* pl) {
+    player = pl;
+}
+
+Player *Field::get_player() const {
+    return player;
+}
+
+void Field::delete_player() {
+    player = nullptr;
+}
+
+void Field::count_frees() {
+    count_free_cells = 0;
+    for(const auto& row : field){
+        for (auto cell : row) {
+            if(cell.is_wall() || cell.get_event() != nullptr)
+                continue;
+            count_free_cells++;
+        }
+    }
+    count_free_cells--;
+}

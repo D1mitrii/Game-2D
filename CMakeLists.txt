@@ -1,9 +1,87 @@
 cmake_minimum_required(VERSION 3.23)
 project(OOP)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(.)
 
 add_executable(OOP
-        main.cpp src/Game.cpp src/Game.h src/Background/Field.cpp src/Background/Field.h src/Events/Event.h src/Views/CellView.cpp src/Views/CellView.h src/Views/FieldView.cpp src/Views/FieldView.h src/Entities/Player.cpp src/Entities/Player.h src/Events/Event.h src/Events/PlayerEvents/PlayerEvents.h src/Events/PlayerEvents/PoisonTrap.h src/Events/PlayerEvents/PoisonTrap.cpp src/Events/PlayerEvents/FrozenTrap.h src/Events/PlayerEvents/FrozenTrap.cpp src/Utils/Obs/ISubject.cpp src/Utils/Obs/ISubject.h src/Utils/Obs/IObserver.cpp src/Utils/Obs/IObserver.h src/Utils/IOCommander.cpp src/Utils/IOCommander.h src/Views/PlayerView.cpp src/Views/PlayerView.h src/Events/PlayerEvents/CoinEvent.cpp src/Events/PlayerEvents/CoinEvent.h src/Utils/RNG/RNGenerator.cpp src/Utils/RNG/RNGenerator.h src/Events/FieldEvents/FieldEvents.h src/Events/FieldEvents/FieldChangePos.cpp src/Events/FieldEvents/FieldChangePos.h src/Events/PlayerEvents/Buff.cpp src/Events/PlayerEvents/Buff.h src/Events/FieldEvents/FieldNoWalls.cpp src/Events/FieldEvents/FieldNoWalls.h src/Events/PlayerEvents/HealEvent.cpp src/Events/PlayerEvents/HealEvent.h src/Utils/Med/IMediator.h src/Utils/Med/MediatorObject.cpp src/Utils/Med/MediatorObject.h src/Utils/Med/Mediator.cpp src/Utils/Med/Mediator.h src/Background/Cell.cpp src/Background/Cell.h src/Background/CellFactory/CellFactory.cpp src/Background/CellFactory/CellFactory.h src/Events/EventGenerator/EventGenerator.cpp src/Events/EventGenerator/EventGenerator.h src/Background/FieldGenerator/FieldGenerator.cpp src/Background/FieldGenerator/FieldGenerator.h src/Logs/Logger/ILogger.h src/Logs/Messages/Message.cpp src/Logs/Messages/Message.h src/Logs/Logger/ConsoleLog.cpp src/Logs/Logger/ConsoleLog.h src/Logs/LogPool/LogPool.cpp src/Logs/LogPool/LogPool.h src/Logs/Levels.h src/Logs/Logger/FileLog.cpp src/Logs/Logger/FileLog.h src/Logs/Messages/MessageFactory.cpp src/Logs/Messages/MessageFactory.h src/Logs/Messages/MessageFactoryDestroyer.cpp src/Logs/Messages/MessageFactoryDestroyer.h src/Control/Configs/IConfig.cpp src/Control/Configs/IConfig.h src/Control/Configs/FileConfig.cpp src/Control/Configs/FileConfig.h src/Control/ConfigReader/ConfigReader.cpp src/Control/ConfigReader/ConfigReader.h src/Control/ControlBridge.cpp src/Control/ControlBridge.h src/Control/Controlers/IControler.h src/Control/Controlers/ConsoleControler.cpp src/Control/Controlers/ConsoleControler.h)
+        main.cpp
+        src/Game.cpp
+        src/Game.h
+        src/Background/Field.cpp
+        src/Background/Field.h
+        src/Events/Event.h
+        src/Views/CellView.cpp
+        src/Views/CellView.h
+        src/Views/FieldView.cpp
+        src/Views/FieldView.h
+        src/Entities/Player.cpp
+        src/Entities/Player.h
+        src/Events/Event.h
+        src/Events/PlayerEvents/PlayerEvents.h
+        src/Events/PlayerEvents/PoisonTrap.h
+        src/Events/PlayerEvents/PoisonTrap.cpp
+        src/Events/PlayerEvents/FrozenTrap.h
+        src/Events/PlayerEvents/FrozenTrap.cpp
+        src/Utils/Obs/ISubject.cpp
+        src/Utils/Obs/ISubject.h
+        src/Utils/Obs/IObserver.cpp
+        src/Utils/Obs/IObserver.h
+        src/Utils/IOCommander.cpp
+        src/Utils/IOCommander.h
+        src/Views/PlayerView.cpp
+        src/Views/PlayerView.h
+        src/Events/PlayerEvents/CoinEvent.cpp
+        src/Events/PlayerEvents/CoinEvent.h
+        src/Utils/RNG/RNGenerator.cpp
+        src/Utils/RNG/RNGenerator.h
+        src/Events/FieldEvents/FieldEvents.h
+        src/Events/FieldEvents/FieldChangePos.cpp
+        src/Events/FieldEvents/FieldChangePos.h
+        src/Events/PlayerEvents/Buff.cpp
+        src/Events/PlayerEvents/Buff.h
+        src/Events/FieldEvents/FieldNoWalls.cpp
+        src/Events/FieldEvents/FieldNoWalls.h
+        src/Events/PlayerEvents/HealEvent.cpp
+        src/Events/PlayerEvents/HealEvent.h
+        src/Utils/Med/IMediator.h
+        src/Utils/Med/MediatorObject.cpp
+        src/Utils/Med/MediatorObject.h
+        src/Utils/Med/Mediator.cpp
+        src/Utils/Med/Mediator.h
+        src/Background/Cell.cpp
+        src/Background/Cell.h
+        src/Events/EventGenerator/PlayerEventGen.cpp
+        src/Events/EventGenerator/PlayerEventGen.h
+        src/Logs/Logger/ILogger.h
+        src/Logs/Messages/Message.cpp
+        src/Logs/Messages/Message.h
+        src/Logs/Logger/ConsoleLog.cpp
+        src/Logs/Logger/ConsoleLog.h
+        src/Logs/LogPool/LogPool.cpp
+        src/Logs/LogPool/LogPool.h
+        src/Logs/Levels.h src/Logs/Logger/FileLog.cpp
+        src/Logs/Logger/FileLog.h
+        src/Logs/Messages/MessageFactory.cpp
+        src/Logs/Messages/MessageFactory.h
+        src/Logs/Messages/MessageFactoryDestroyer.cpp
+        src/Logs/Messages/MessageFactoryDestroyer.h
+        src/Control/Configs/IConfig.cpp
+        src/Control/Configs/IConfig.h
+        src/Control/Configs/FileConfig.cpp
+        src/Control/Configs/FileConfig.h
+        src/Control/ConfigReader/ConfigReader.cpp
+        src/Control/ConfigReader/ConfigReader.h
+        src/Control/ControlBridge.cpp
+        src/Control/ControlBridge.h
+        src/Control/Controlers/IControler.h
+        src/Control/Controlers/ConsoleControler.cpp
+        src/Control/Controlers/ConsoleControler.h
+        src/Generator/FieldGen.h
+        src/Generator/Rules/R_Player_Spawn.h
+        src/Generator/Rules/R_Rand_Walls.h
+        src/Generator/Rules/R_Rand_Events.h
+        src/Events/EventGenerator/IEventGen.h
+        src/Events/EventGenerator/FieldEventGen.cpp
+        src/Events/EventGenerator/FieldEventGen.h src/Generator/Rules/R_Row_Walls.h src/Generator/Rules/Util_Funcs.cpp src/Generator/Rules/Util_Funcs.h src/Generator/Rules/R_Column_Walls.h src/Events/GameEvents/WinEvent.cpp src/Events/GameEvents/WinEvent.h src/Events/GameEvents/GameEvents.h src/Generator/Rules/R_Win_Cell.h src/Events/PlayerEvents/TreasureEvent.cpp src/Events/PlayerEvents/TreasureEvent.h src/Generator/Rules/R_Field_Size.h)

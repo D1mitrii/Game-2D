@@ -5,14 +5,14 @@
 #include "IOCommander.h"
 #include "src/Logs/Logger/FileLog.h"
 
-int IOCommander::read_number() const {
-    int number;
-    std::cin >> number;
-    if(number < 5 || number > 15){
-        number = 10;
-        MessageFactory::get_instance().create_message(Errors, "Incorrect side value!");
-    }
-    return number;
+void IOCommander::read_level_num(){
+    std::cout << "Enter the level number(must be an integer):";
+    std::cin >> level_num;
+    mediator->notify(this, IMediator::LEVEL);
+}
+
+int IOCommander::get_level() const {
+    return level_num;
 }
 
 std::vector<Levels> IOCommander::read_levels() {
@@ -37,15 +37,6 @@ bool IOCommander::get_approve() const {
     std::cout << "[1 - yes]\n";
     std::cin >> ch;
     return ch == '1';
-}
-
-void IOCommander::map_standard() const {
-    std::cout << "Do you want to enter a size of map yourself?\n";
-    if(get_approve()){
-        mediator->notify((MediatorObject *) this, IMediator::MEVENTS::CONFIRM);
-    }
-    else
-        mediator->notify((MediatorObject *) this, IMediator::MEVENTS::CANCEL);
 }
 
 void IOCommander::Defeat() const {
@@ -82,16 +73,4 @@ void IOCommander::create_logger() {
     std::vector<Levels> list_levels;
     log->set_log_levels(read_levels());
     mediator->set_log(log);
-}
-
-std::pair<int, int> IOCommander::read_size() {
-    int width;
-    int height;
-    std::cout << "The size of the map must be in range from 5 to 15" << '\n';
-    std::cout << "If you enter an incorrect output, the values set to 10" << '\n';
-    std::cout << "Enter a size for the map." << '\n' << "Width:";
-    width = read_number();
-    std::cout << "Height:";
-    height = read_number();
-    return std::pair<int, int>{width, height};
 }

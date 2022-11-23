@@ -176,30 +176,6 @@ src/Background/Cell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Cell.cpp.s
 .PHONY : src/Background/Cell.cpp.s
 
-src/Background/CellFactory/CellFactory.obj: src/Background/CellFactory/CellFactory.cpp.obj
-.PHONY : src/Background/CellFactory/CellFactory.obj
-
-# target to build an object file
-src/Background/CellFactory/CellFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.obj
-.PHONY : src/Background/CellFactory/CellFactory.cpp.obj
-
-src/Background/CellFactory/CellFactory.i: src/Background/CellFactory/CellFactory.cpp.i
-.PHONY : src/Background/CellFactory/CellFactory.i
-
-# target to preprocess a source file
-src/Background/CellFactory/CellFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.i
-.PHONY : src/Background/CellFactory/CellFactory.cpp.i
-
-src/Background/CellFactory/CellFactory.s: src/Background/CellFactory/CellFactory.cpp.s
-.PHONY : src/Background/CellFactory/CellFactory.s
-
-# target to generate assembly for a file
-src/Background/CellFactory/CellFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/CellFactory/CellFactory.cpp.s
-.PHONY : src/Background/CellFactory/CellFactory.cpp.s
-
 src/Background/Field.obj: src/Background/Field.cpp.obj
 .PHONY : src/Background/Field.obj
 
@@ -223,30 +199,6 @@ src/Background/Field.s: src/Background/Field.cpp.s
 src/Background/Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/Field.cpp.s
 .PHONY : src/Background/Field.cpp.s
-
-src/Background/FieldGenerator/FieldGenerator.obj: src/Background/FieldGenerator/FieldGenerator.cpp.obj
-.PHONY : src/Background/FieldGenerator/FieldGenerator.obj
-
-# target to build an object file
-src/Background/FieldGenerator/FieldGenerator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.obj
-.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.obj
-
-src/Background/FieldGenerator/FieldGenerator.i: src/Background/FieldGenerator/FieldGenerator.cpp.i
-.PHONY : src/Background/FieldGenerator/FieldGenerator.i
-
-# target to preprocess a source file
-src/Background/FieldGenerator/FieldGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.i
-.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.i
-
-src/Background/FieldGenerator/FieldGenerator.s: src/Background/FieldGenerator/FieldGenerator.cpp.s
-.PHONY : src/Background/FieldGenerator/FieldGenerator.s
-
-# target to generate assembly for a file
-src/Background/FieldGenerator/FieldGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Background/FieldGenerator/FieldGenerator.cpp.s
-.PHONY : src/Background/FieldGenerator/FieldGenerator.cpp.s
 
 src/Control/ConfigReader/ConfigReader.obj: src/Control/ConfigReader/ConfigReader.cpp.obj
 .PHONY : src/Control/ConfigReader/ConfigReader.obj
@@ -392,29 +344,53 @@ src/Entities/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Entities/Player.cpp.s
 .PHONY : src/Entities/Player.cpp.s
 
-src/Events/EventGenerator/EventGenerator.obj: src/Events/EventGenerator/EventGenerator.cpp.obj
-.PHONY : src/Events/EventGenerator/EventGenerator.obj
+src/Events/EventGenerator/FieldEventGen.obj: src/Events/EventGenerator/FieldEventGen.cpp.obj
+.PHONY : src/Events/EventGenerator/FieldEventGen.obj
 
 # target to build an object file
-src/Events/EventGenerator/EventGenerator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.obj
-.PHONY : src/Events/EventGenerator/EventGenerator.cpp.obj
+src/Events/EventGenerator/FieldEventGen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/FieldEventGen.cpp.obj
+.PHONY : src/Events/EventGenerator/FieldEventGen.cpp.obj
 
-src/Events/EventGenerator/EventGenerator.i: src/Events/EventGenerator/EventGenerator.cpp.i
-.PHONY : src/Events/EventGenerator/EventGenerator.i
+src/Events/EventGenerator/FieldEventGen.i: src/Events/EventGenerator/FieldEventGen.cpp.i
+.PHONY : src/Events/EventGenerator/FieldEventGen.i
 
 # target to preprocess a source file
-src/Events/EventGenerator/EventGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.i
-.PHONY : src/Events/EventGenerator/EventGenerator.cpp.i
+src/Events/EventGenerator/FieldEventGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/FieldEventGen.cpp.i
+.PHONY : src/Events/EventGenerator/FieldEventGen.cpp.i
 
-src/Events/EventGenerator/EventGenerator.s: src/Events/EventGenerator/EventGenerator.cpp.s
-.PHONY : src/Events/EventGenerator/EventGenerator.s
+src/Events/EventGenerator/FieldEventGen.s: src/Events/EventGenerator/FieldEventGen.cpp.s
+.PHONY : src/Events/EventGenerator/FieldEventGen.s
 
 # target to generate assembly for a file
-src/Events/EventGenerator/EventGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/EventGenerator.cpp.s
-.PHONY : src/Events/EventGenerator/EventGenerator.cpp.s
+src/Events/EventGenerator/FieldEventGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/FieldEventGen.cpp.s
+.PHONY : src/Events/EventGenerator/FieldEventGen.cpp.s
+
+src/Events/EventGenerator/PlayerEventGen.obj: src/Events/EventGenerator/PlayerEventGen.cpp.obj
+.PHONY : src/Events/EventGenerator/PlayerEventGen.obj
+
+# target to build an object file
+src/Events/EventGenerator/PlayerEventGen.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/PlayerEventGen.cpp.obj
+.PHONY : src/Events/EventGenerator/PlayerEventGen.cpp.obj
+
+src/Events/EventGenerator/PlayerEventGen.i: src/Events/EventGenerator/PlayerEventGen.cpp.i
+.PHONY : src/Events/EventGenerator/PlayerEventGen.i
+
+# target to preprocess a source file
+src/Events/EventGenerator/PlayerEventGen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/PlayerEventGen.cpp.i
+.PHONY : src/Events/EventGenerator/PlayerEventGen.cpp.i
+
+src/Events/EventGenerator/PlayerEventGen.s: src/Events/EventGenerator/PlayerEventGen.cpp.s
+.PHONY : src/Events/EventGenerator/PlayerEventGen.s
+
+# target to generate assembly for a file
+src/Events/EventGenerator/PlayerEventGen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/EventGenerator/PlayerEventGen.cpp.s
+.PHONY : src/Events/EventGenerator/PlayerEventGen.cpp.s
 
 src/Events/FieldEvents/FieldChangePos.obj: src/Events/FieldEvents/FieldChangePos.cpp.obj
 .PHONY : src/Events/FieldEvents/FieldChangePos.obj
@@ -463,6 +439,30 @@ src/Events/FieldEvents/FieldNoWalls.s: src/Events/FieldEvents/FieldNoWalls.cpp.s
 src/Events/FieldEvents/FieldNoWalls.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/FieldEvents/FieldNoWalls.cpp.s
 .PHONY : src/Events/FieldEvents/FieldNoWalls.cpp.s
+
+src/Events/GameEvents/WinEvent.obj: src/Events/GameEvents/WinEvent.cpp.obj
+.PHONY : src/Events/GameEvents/WinEvent.obj
+
+# target to build an object file
+src/Events/GameEvents/WinEvent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/GameEvents/WinEvent.cpp.obj
+.PHONY : src/Events/GameEvents/WinEvent.cpp.obj
+
+src/Events/GameEvents/WinEvent.i: src/Events/GameEvents/WinEvent.cpp.i
+.PHONY : src/Events/GameEvents/WinEvent.i
+
+# target to preprocess a source file
+src/Events/GameEvents/WinEvent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/GameEvents/WinEvent.cpp.i
+.PHONY : src/Events/GameEvents/WinEvent.cpp.i
+
+src/Events/GameEvents/WinEvent.s: src/Events/GameEvents/WinEvent.cpp.s
+.PHONY : src/Events/GameEvents/WinEvent.s
+
+# target to generate assembly for a file
+src/Events/GameEvents/WinEvent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/GameEvents/WinEvent.cpp.s
+.PHONY : src/Events/GameEvents/WinEvent.cpp.s
 
 src/Events/PlayerEvents/Buff.obj: src/Events/PlayerEvents/Buff.cpp.obj
 .PHONY : src/Events/PlayerEvents/Buff.obj
@@ -584,6 +584,30 @@ src/Events/PlayerEvents/PoisonTrap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/PlayerEvents/PoisonTrap.cpp.s
 .PHONY : src/Events/PlayerEvents/PoisonTrap.cpp.s
 
+src/Events/PlayerEvents/TreasureEvent.obj: src/Events/PlayerEvents/TreasureEvent.cpp.obj
+.PHONY : src/Events/PlayerEvents/TreasureEvent.obj
+
+# target to build an object file
+src/Events/PlayerEvents/TreasureEvent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/PlayerEvents/TreasureEvent.cpp.obj
+.PHONY : src/Events/PlayerEvents/TreasureEvent.cpp.obj
+
+src/Events/PlayerEvents/TreasureEvent.i: src/Events/PlayerEvents/TreasureEvent.cpp.i
+.PHONY : src/Events/PlayerEvents/TreasureEvent.i
+
+# target to preprocess a source file
+src/Events/PlayerEvents/TreasureEvent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/PlayerEvents/TreasureEvent.cpp.i
+.PHONY : src/Events/PlayerEvents/TreasureEvent.cpp.i
+
+src/Events/PlayerEvents/TreasureEvent.s: src/Events/PlayerEvents/TreasureEvent.cpp.s
+.PHONY : src/Events/PlayerEvents/TreasureEvent.s
+
+# target to generate assembly for a file
+src/Events/PlayerEvents/TreasureEvent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Events/PlayerEvents/TreasureEvent.cpp.s
+.PHONY : src/Events/PlayerEvents/TreasureEvent.cpp.s
+
 src/Game.obj: src/Game.cpp.obj
 .PHONY : src/Game.obj
 
@@ -607,6 +631,30 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
+
+src/Generator/Rules/Util_Funcs.obj: src/Generator/Rules/Util_Funcs.cpp.obj
+.PHONY : src/Generator/Rules/Util_Funcs.obj
+
+# target to build an object file
+src/Generator/Rules/Util_Funcs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Generator/Rules/Util_Funcs.cpp.obj
+.PHONY : src/Generator/Rules/Util_Funcs.cpp.obj
+
+src/Generator/Rules/Util_Funcs.i: src/Generator/Rules/Util_Funcs.cpp.i
+.PHONY : src/Generator/Rules/Util_Funcs.i
+
+# target to preprocess a source file
+src/Generator/Rules/Util_Funcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Generator/Rules/Util_Funcs.cpp.i
+.PHONY : src/Generator/Rules/Util_Funcs.cpp.i
+
+src/Generator/Rules/Util_Funcs.s: src/Generator/Rules/Util_Funcs.cpp.s
+.PHONY : src/Generator/Rules/Util_Funcs.s
+
+# target to generate assembly for a file
+src/Generator/Rules/Util_Funcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/src/Generator/Rules/Util_Funcs.cpp.s
+.PHONY : src/Generator/Rules/Util_Funcs.cpp.s
 
 src/Logs/LogPool/LogPool.obj: src/Logs/LogPool/LogPool.cpp.obj
 .PHONY : src/Logs/LogPool/LogPool.obj
@@ -983,15 +1031,9 @@ help:
 	@echo ... src/Background/Cell.obj
 	@echo ... src/Background/Cell.i
 	@echo ... src/Background/Cell.s
-	@echo ... src/Background/CellFactory/CellFactory.obj
-	@echo ... src/Background/CellFactory/CellFactory.i
-	@echo ... src/Background/CellFactory/CellFactory.s
 	@echo ... src/Background/Field.obj
 	@echo ... src/Background/Field.i
 	@echo ... src/Background/Field.s
-	@echo ... src/Background/FieldGenerator/FieldGenerator.obj
-	@echo ... src/Background/FieldGenerator/FieldGenerator.i
-	@echo ... src/Background/FieldGenerator/FieldGenerator.s
 	@echo ... src/Control/ConfigReader/ConfigReader.obj
 	@echo ... src/Control/ConfigReader/ConfigReader.i
 	@echo ... src/Control/ConfigReader/ConfigReader.s
@@ -1010,15 +1052,21 @@ help:
 	@echo ... src/Entities/Player.obj
 	@echo ... src/Entities/Player.i
 	@echo ... src/Entities/Player.s
-	@echo ... src/Events/EventGenerator/EventGenerator.obj
-	@echo ... src/Events/EventGenerator/EventGenerator.i
-	@echo ... src/Events/EventGenerator/EventGenerator.s
+	@echo ... src/Events/EventGenerator/FieldEventGen.obj
+	@echo ... src/Events/EventGenerator/FieldEventGen.i
+	@echo ... src/Events/EventGenerator/FieldEventGen.s
+	@echo ... src/Events/EventGenerator/PlayerEventGen.obj
+	@echo ... src/Events/EventGenerator/PlayerEventGen.i
+	@echo ... src/Events/EventGenerator/PlayerEventGen.s
 	@echo ... src/Events/FieldEvents/FieldChangePos.obj
 	@echo ... src/Events/FieldEvents/FieldChangePos.i
 	@echo ... src/Events/FieldEvents/FieldChangePos.s
 	@echo ... src/Events/FieldEvents/FieldNoWalls.obj
 	@echo ... src/Events/FieldEvents/FieldNoWalls.i
 	@echo ... src/Events/FieldEvents/FieldNoWalls.s
+	@echo ... src/Events/GameEvents/WinEvent.obj
+	@echo ... src/Events/GameEvents/WinEvent.i
+	@echo ... src/Events/GameEvents/WinEvent.s
 	@echo ... src/Events/PlayerEvents/Buff.obj
 	@echo ... src/Events/PlayerEvents/Buff.i
 	@echo ... src/Events/PlayerEvents/Buff.s
@@ -1034,9 +1082,15 @@ help:
 	@echo ... src/Events/PlayerEvents/PoisonTrap.obj
 	@echo ... src/Events/PlayerEvents/PoisonTrap.i
 	@echo ... src/Events/PlayerEvents/PoisonTrap.s
+	@echo ... src/Events/PlayerEvents/TreasureEvent.obj
+	@echo ... src/Events/PlayerEvents/TreasureEvent.i
+	@echo ... src/Events/PlayerEvents/TreasureEvent.s
 	@echo ... src/Game.obj
 	@echo ... src/Game.i
 	@echo ... src/Game.s
+	@echo ... src/Generator/Rules/Util_Funcs.obj
+	@echo ... src/Generator/Rules/Util_Funcs.i
+	@echo ... src/Generator/Rules/Util_Funcs.s
 	@echo ... src/Logs/LogPool/LogPool.obj
 	@echo ... src/Logs/LogPool/LogPool.i
 	@echo ... src/Logs/LogPool/LogPool.s

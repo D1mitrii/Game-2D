@@ -13,8 +13,7 @@ class IMediator {
 public:
     enum MEVENTS{
         GAME_STATUS,
-        CONFIRM,
-        CANCEL,
+        LEVEL,
         FIELD,
         STEP
     };

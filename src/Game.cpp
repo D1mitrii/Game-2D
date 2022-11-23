@@ -5,13 +5,40 @@ void Game::start() {
     mediator->notify(this, IMediator::GAME_STATUS);
     status = INPROGRESS;
     MessageFactory::get_instance().create_message(Gamestatus, "Game is ON.");
-    field_generate();
     loop();
 }
 
 Game::Game(){
     this->player = new Player();
     this->player_view = new PlayerView(player);
+
+    levels_gens[1] = [](Player* pl){
+        FieldGen<
+                R_Field_Size<20, 20>,
+                R_Player_Spawn<0, 0>,
+                R_Rand_Walls<70>,
+                R_Rand_Events<PlayerEventGen, 5>,
+                R_Rand_Events<FieldEventGen, 5>,
+                R_Win_Cell<1, 1>
+        > gen;
+        return gen.execute(pl);
+    };
+
+    levels_gens[2] = [](Player* pl){
+        FieldGen<
+                R_Field_Size<15, 15>,
+                R_Player_Spawn<4, 4>,
+                R_Rand_Events<PlayerEventGen, 25>,
+                R_Rand_Events<FieldEventGen, 5>,
+                R_Column_Walls<3, 0, 5, true>,
+                R_Row_Walls<3, 0, 5, false>,
+                R_Column_Walls<7, 3, 6, false>,
+                R_Row_Walls<4, 6, 9, false>,
+                R_Win_Cell<4, 5>
+        > gen;
+        return gen.execute(pl);
+    };
+
 }
 
 void Game::reaction() {
@@ -45,22 +72,16 @@ void Game::set_status(STATUS stat) {
     status = stat;
 }
 
-void Game::field_generate() {
-    EventGenerator gen(player, field);
-    CellFactory factory(gen);
-    FieldGenerator fieldGenerator(factory);
-    fieldGenerator.field_generate(*field);
-    MessageFactory::get_instance().create_message(GameObjects, "The playing field is generated.");
-}
-
-void Game::initialize_field() {
-    this->field = new Field();
+void Game::initialize_field(int level_num){
+    auto it = levels_gens[1];
+    if(levels_gens.count(level_num) != 0){
+        it = levels_gens[level_num];
+    }
+    else
+        MessageFactory::get_instance().create_message(Errors, "There is no such level. Level 1 has been started.");
+    field = it(player);
     field_view = new FieldView(field);
-}
-
-void Game::initialize_field(std::pair<int, int> size) {
-    this->field = new Field(size.first, size.second);
-    field_view = new FieldView(field);
+    field_view->update();
 }
 
 void Game::set_step(Player::Moves cur) {

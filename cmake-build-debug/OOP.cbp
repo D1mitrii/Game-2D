@@ -93,22 +93,10 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/Cell.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/CellFactory/CellFactory.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/CellFactory/CellFactory.h">
-			<Option target="OOP"/>
-		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/Field.cpp">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Background/Field.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/FieldGenerator/FieldGenerator.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Background/FieldGenerator/FieldGenerator.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Control/ConfigReader/ConfigReader.cpp">
@@ -153,10 +141,19 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/Event.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/EventGenerator.cpp">
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/FieldEventGen.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/EventGenerator.h">
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/FieldEventGen.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/IEventGen.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/PlayerEventGen.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/EventGenerator/PlayerEventGen.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldChangePos.cpp">
@@ -172,6 +169,15 @@
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/FieldEvents/FieldNoWalls.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/GameEvents/GameEvents.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/GameEvents/WinEvent.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/GameEvents/WinEvent.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/PlayerEvents/Buff.cpp">
@@ -207,10 +213,46 @@
 		<Unit filename="D:/Programming/REPO/OOP/src/Events/PlayerEvents/PoisonTrap.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/PlayerEvents/TreasureEvent.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Events/PlayerEvents/TreasureEvent.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Game.cpp">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Game.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/FieldGen.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Column_Walls.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Field_Size.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Player_Spawn.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Rand_Events.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Rand_Walls.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Row_Walls.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/R_Win_Cell.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/Util_Funcs.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="D:/Programming/REPO/OOP/src/Generator/Rules/Util_Funcs.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="D:/Programming/REPO/OOP/src/Logs/Levels.h">

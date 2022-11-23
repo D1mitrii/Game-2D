@@ -55,17 +55,13 @@ void Mediator::g_start() {
     control = new ControlBridge(rcfg.read_cfg(), new ConsoleControler());
     control->set_mediator(this);
 
-    commander->map_standard();
+    commander->read_level_num();
 }
 
 void Mediator::commander_handler(IMediator::MEVENTS cmd) {
     switch (cmd) {
-        case IMediator::CONFIRM:{
-            game->initialize_field(commander->read_size());
-            break;
-        }
-        case IMediator::CANCEL:{
-            game->initialize_field();
+        case IMediator::LEVEL:{
+            game->initialize_field(commander->get_level());
             break;
         }
         case IMediator::STEP:{
