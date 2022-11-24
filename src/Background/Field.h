@@ -39,7 +39,6 @@ public:
     void set_count(int count);
     void set_player(Player* pl);
     Player* get_player() const;
-    void delete_player();
     Cell& get_cell(int x, int y);
     std::pair<int, int> get_position() const;
     void remove_walls();

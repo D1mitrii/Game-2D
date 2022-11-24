@@ -13,7 +13,6 @@ public:
         auto* field = new Field;
         field->set_player(player);
         (Rules()(field), ...);
-        field->delete_player();
         return field;
     };
 };

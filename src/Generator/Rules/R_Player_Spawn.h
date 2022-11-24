@@ -11,6 +11,8 @@ template<int x, int y>
 class R_Player_Spawn{
 public:
     void operator()(Field* field){
+        field->get_cell(x, y).set_wall(false);
+        field->get_cell(x, y).set_event(nullptr);
         auto pair = std::make_pair<int, int>(x, y);
         field->set_player_pos(pair);
     };

@@ -161,10 +161,6 @@ Player *Field::get_player() const {
     return player;
 }
 
-void Field::delete_player() {
-    player = nullptr;
-}
-
 void Field::count_frees() {
     count_free_cells = 0;
     for(const auto& row : field){
