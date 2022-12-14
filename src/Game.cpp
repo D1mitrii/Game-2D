@@ -17,7 +17,7 @@ Game::Game(){
                 R_Field_Size<20, 20>,
                 R_Player_Spawn<0, 0>,
                 R_Rand_Walls<70>,
-                R_Rand_Events<PlayerEventGen, 5>,
+                R_Rand_Events<PlayerEventGen, 50>,
                 R_Rand_Events<FieldEventGen, 5>,
                 R_Win_Cell<1, 1>
         > gen;
@@ -61,6 +61,7 @@ void Game::is_end() {
     if(player->get_power() <= 0){
         status = DEFEAT;
     }
+    save_game();
     mediator->notify(this, IMediator::GAME_STATUS);
 }
 
@@ -99,6 +100,11 @@ void Game::loop() {
 Game::~Game() {
     delete field_view;
     delete player_view;
-    delete player;
     delete field;
+    delete player;
+}
+
+void Game::save_game() const {
+    Saver save("test1.txt");
+    save.save(field->create_snapshot());
 }

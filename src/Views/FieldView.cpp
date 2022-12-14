@@ -38,3 +38,19 @@ void FieldView::update() {
     write_field();
 }
 
+std::string FieldView::save_view(std::vector<std::vector<Cell>> map_field, std::pair<int,int> player, int width, int height) {
+    std::string field_view;
+    for (int i = 0; i != height; ++i) {
+        for (int j = 0; j != width; ++j) {
+            if(i == player.second && j == player.first){
+                field_view += "P";
+            }
+            else{
+                field_view += CellView(map_field.at(i).at(j)).get_view();
+            }
+        }
+        field_view += "\n";
+    }
+    return field_view;
+}
+

@@ -22,6 +22,7 @@ class WinEvent;
 #include "src/Generator/Rules/R_Win_Cell.h"
 #include "src/Events/EventGenerator/FieldEventGen.h"
 #include "src/Events/EventGenerator/PlayerEventGen.h"
+#include "src/Utils/Memento/Saver.h"
 
 class Game : public MediatorObject{
 public:
@@ -38,12 +39,15 @@ public:
     STATUS get_status() const;
     void set_status(STATUS stat);
     void set_step(Player::Moves cur);
+    void save_game() const;
+    void load_game() const;
     ~Game() override;
 private:
     Field* field;
     Player* player;
     FieldView* field_view;
     PlayerView* player_view;
+
     Player::Moves cur_step;
     std::map<int, std::function<Field* (Player*)>> levels_gens;
     void loop();

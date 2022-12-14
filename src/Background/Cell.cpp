@@ -44,3 +44,7 @@ bool Cell::is_wall() const {
 Event *Cell::get_event() {
     return event;
 }
+
+Event *Cell::get_event() const {
+    return event;
+}

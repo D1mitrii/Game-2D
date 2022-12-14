@@ -21,6 +21,7 @@ public:
     explicit CellView(Cell& cell);
     ~CellView() = default;
     char get_view() const;
+
 };
 
 

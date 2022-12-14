@@ -38,6 +38,11 @@ void Player::set_coins(int coin) {
     MessageFactory::get_instance().create_message(GameObjects, "The player's coins has been changed.");
 }
 
+std::vector<int> Player::get_stats() const {
+    std::vector<int> stats {hearts, coins, power, max_stat};
+    return stats;
+}
+
 void Player::set_max_stat(int max) {
     this->max_stat = max;
     notify();

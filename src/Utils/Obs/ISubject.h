@@ -10,7 +10,7 @@
 #include <algorithm>
 
 class ISubject {
-private:
+protected:
     std::vector<IObserver*> observers;
 public:
     void attach(IObserver *observer);

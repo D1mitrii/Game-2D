@@ -172,3 +172,7 @@ void Field::count_frees() {
     }
     count_free_cells--;
 }
+
+Memento* Field::create_snapshot() {
+    return new Memento(width, width, height, field, player_position, player->get_stats());
+}

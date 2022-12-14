@@ -19,6 +19,7 @@ private:
 public:
     FieldView() = default;
     explicit FieldView(Field* map);
+    std::string save_view(std::vector<std::vector<Cell>> map_field, std::pair<int,int> player, int width, int height);
     ~FieldView() = default;
     void update() override;
 };

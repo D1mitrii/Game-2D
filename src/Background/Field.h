@@ -10,6 +10,7 @@ class Cell;
 #include <map>
 #include <vector>
 #include <utility>
+#include "src/Utils/Memento/Memento.h"
 #include "src/Logs/LogPool/LogPool.h"
 
 class Field : public ISubject{
@@ -21,7 +22,6 @@ private:
     std::pair<int, int> player_position;
     std::vector<std::vector<Cell>> field;
     void check_position(std::pair<int, int> pair);
-    std::vector<IObserver*> observers;
     void count_frees();
 public:
     explicit Field(int a = 10, int b = 10);
@@ -41,6 +41,7 @@ public:
     Player* get_player() const;
     Cell& get_cell(int x, int y);
     std::pair<int, int> get_position() const;
+    Memento* create_snapshot();
     void remove_walls();
     void deconstruct();
     ~Field();

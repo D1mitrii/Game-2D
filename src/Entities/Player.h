@@ -13,7 +13,6 @@ private:
     int power;
     int max_stat;
     int coins;
-    std::vector<IObserver*> observers;
 public:
     enum Moves{
         UP,
@@ -34,6 +33,7 @@ public:
     void set_power(int dmg);
     void set_coins(int coin);
     void set_max_stat(int max);
+    std::vector<int> get_stats() const;
 };
 
 

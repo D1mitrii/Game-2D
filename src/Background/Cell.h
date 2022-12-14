@@ -18,6 +18,7 @@ public:
     void set_wall(bool value);
     bool is_wall() const;
     Event* get_event();
+    Event* get_event() const;
 };
 
 
